@@ -1,0 +1,125 @@
+[
+  {
+    "id": "eco-lux-7-8",
+    "name": "Scandinavian Eco Lux Wood Fired Hot Tub",
+    "capacity": "7-8 Person",
+    "category": "hot-tubs",
+    "badge": "Sale",
+    "price": 8895,
+    "compareAt": 12395,
+    "rating": 5,
+    "reviews": 38,
+    "image": "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=900&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1551734995-4dc7e5e4f8c5?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1601233749377-c1b2b6f6a8c6?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "summary": "Our largest Eco Lux model — handcrafted from sustainably sourced spruce with integrated jets and ambient LED lighting for a true backyard spa experience.",
+    "features": [
+      "Seats 7-8 adults comfortably",
+      "Includes hydrotherapy jets and underwater LED lights",
+      "External wood-fired stove heats water naturally, no electricity required",
+      "Built from rot-resistant Scandinavian spruce",
+      "Insulated cedar cover included"
+    ]
+  },
+  {
+    "id": "eco-lux-5-6",
+    "name": "Scandinavian Eco Lux Wood Fired Hot Tub",
+    "capacity": "5-6 Person",
+    "category": "hot-tubs",
+    "badge": "Sale",
+    "price": 7895,
+    "compareAt": 10895,
+    "rating": 5,
+    "reviews": 52,
+    "image": "https://images.unsplash.com/photo-1551734995-4dc7e5e4f8c5?q=80&w=900&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1551734995-4dc7e5e4f8c5?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1601233749377-c1b2b6f6a8c6?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "summary": "Our most popular size — a perfect fit for families and patios, with the same jets, lighting and craftsmanship as our larger Eco Lux model.",
+    "features": [
+      "Seats 5-6 adults comfortably",
+      "Includes hydrotherapy jets and underwater LED lights",
+      "External wood-fired stove heats water naturally, no electricity required",
+      "Built from rot-resistant Scandinavian spruce",
+      "Insulated cedar cover included"
+    ]
+  },
+  {
+    "id": "premium-5-6",
+    "name": "Premium Wood Fired Hot Tub",
+    "capacity": "5-6 Person",
+    "category": "hot-tubs",
+    "badge": "Sale",
+    "price": 7895,
+    "compareAt": 11395,
+    "rating": 4.5,
+    "reviews": 21,
+    "image": "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=900&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1551734995-4dc7e5e4f8c5?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1601233749377-c1b2b6f6a8c6?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "summary": "A timeless, no-frills wood fired tub for those who want the pure ritual of fire-heated water without the extras.",
+    "features": [
+      "Seats 5-6 adults comfortably",
+      "Classic exterior wood-fired stove",
+      "Built from rot-resistant Scandinavian spruce",
+      "Simple, low-maintenance design",
+      "Insulated cedar cover included"
+    ]
+  },
+  {
+    "id": "insulated-cover",
+    "name": "Insulated Cedar Cover",
+    "capacity": "Universal Fit",
+    "category": "accessories",
+    "badge": null,
+    "price": 395,
+    "compareAt": null,
+    "rating": 5,
+    "reviews": 14,
+    "image": "https://images.unsplash.com/photo-1601233749377-c1b2b6f6a8c6?q=80&w=900&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1601233749377-c1b2b6f6a8c6?q=80&w=1200&auto=format&fit=crop"],
+    "summary": "Keep heat in and debris out between soaks with our weatherproof insulated cedar cover.",
+    "features": ["Fits all Scandiihaus hot tub models", "Marine-grade vinyl shell", "Locking straps included"]
+  },
+  {
+    "id": "led-light-kit",
+    "name": "Underwater LED Light Kit",
+    "capacity": "Universal Fit",
+    "category": "accessories",
+    "badge": "New",
+    "price": 225,
+    "compareAt": null,
+    "rating": 4.5,
+    "reviews": 9,
+    "image": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=900&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=1200&auto=format&fit=crop"],
+    "summary": "Set the mood with colour-changing underwater lighting, remote-controlled from the deck of your tub.",
+    "features": ["7 colour modes", "Remote control included", "Easy retrofit install"]
+  },
+  {
+    "id": "hot-tub-steps",
+    "name": "Cedar Hot Tub Steps",
+    "capacity": "Universal Fit",
+    "category": "accessories",
+    "badge": null,
+    "price": 165,
+    "compareAt": null,
+    "rating": 4.5,
+    "reviews": 11,
+    "image": "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=900&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=1200&auto=format&fit=crop"],
+    "summary": "Solid cedar steps for safe, comfortable entry and exit, finished to match your tub.",
+    "features": ["Solid cedar construction", "Non-slip tread", "Weatherproof sealant finish"]
+  }
+]

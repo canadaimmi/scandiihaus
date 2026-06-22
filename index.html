@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scandiihaus | Wood Fired Hot Tubs &amp; Saunas — Create the Oasis of Your Dreams</title>
+<meta name="description" content="Handcrafted Scandinavian wood fired hot tubs. Unparalleled craftsmanship, exceptional value, free shipping across North America.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="announce-bar">Father's Day Sale — <span>$3,500 OFF</span> all Hot Tubs &amp; Saunas, while supplies last</div>
+
+<header class="site-header">
+  <div class="nav-main">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">☰</button>
+    <a href="index.html" class="nav-logo">Scandii<span>haus</span></a>
+    <ul class="nav-links">
+      <li class="has-dropdown">
+        <a href="shop.html">Hot Tubs</a>
+        <div class="dropdown">
+          <div class="dropdown-col">
+            <h4>Shop Hot Tubs</h4>
+            <a href="shop.html?cat=hot-tubs">All Hot Tubs</a>
+            <a href="product.html?id=eco-lux-7-8">Eco Lux 7-8 Person</a>
+            <a href="product.html?id=eco-lux-5-6">Eco Lux 5-6 Person</a>
+            <a href="product.html?id=premium-5-6">Premium 5-6 Person</a>
+          </div>
+          <div class="dropdown-col">
+            <h4>Accessories</h4>
+            <a href="shop.html?cat=accessories">All Accessories</a>
+            <a href="product.html?id=insulated-cover">Insulated Covers</a>
+            <a href="product.html?id=led-light-kit">LED Light Kits</a>
+            <a href="product.html?id=hot-tub-steps">Cedar Steps</a>
+          </div>
+          <div class="dropdown-promo">
+            <img src="https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=600&auto=format&fit=crop" alt="Eco Lux hot tub">
+            <p>Save up to $3,500 this week</p>
+          </div>
+        </div>
+      </li>
+      <li><a href="shop.html?cat=accessories">Accessories</a></li>
+      <li><a href="about.html">Our Story</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="nav-icon-btn" aria-label="Search">⚲</button>
+      <button class="nav-icon-btn" id="cartBtn" aria-label="Cart">⛃<span class="cart-dot" id="cartDot"></span></button>
+      <a href="contact.html" class="help-link btn btn-dark" style="padding:10px 20px;">Get a Quote</a>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <button class="mobile-nav-close" id="mobileNavClose">×</button>
+  <a href="shop.html?cat=hot-tubs">Hot Tubs</a>
+  <a href="shop.html?cat=accessories">Accessories</a>
+  <a href="about.html">Our Story</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="hero">
+  <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=1800&auto=format&fit=crop')"></div>
+  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1551734995-4dc7e5e4f8c5?q=80&w=1800&auto=format&fit=crop')"></div>
+  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1800&auto=format&fit=crop')"></div>
+  <div class="hero-overlay"></div>
+  <button class="hero-arrow left" aria-label="Previous slide">‹</button>
+  <button class="hero-arrow right" aria-label="Next slide">›</button>
+  <div class="hero-content">
+    <span class="eyebrow">Scandinavian Design · Handcrafted in Spruce</span>
+    <h1>Create the Oasis of Your Dreams</h1>
+    <p class="sub">Wood fired hot tubs built for unparalleled craftsmanship and exceptional value — no electricity, just fire, water and time.</p>
+    <div class="hero-cta">
+      <a href="shop.html" class="btn btn-ember">Shop Hot Tubs</a>
+      <a href="about.html" class="btn btn-outline-light">Our Story</a>
+    </div>
+  </div>
+  <div class="hero-dots">
+    <span class="active"></span><span></span><span></span>
+  </div>
+</section>
+
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+<section class="usp-strip">
+  <div class="container">
+    <div class="usp-item"><span class="icon">🔥</span> No Electricity Required</div>
+    <div class="usp-item"><span class="icon">🚚</span> Free Shipping, North America</div>
+    <div class="usp-item"><span class="icon">🛡️</span> 5-Year Structural Warranty</div>
+    <div class="usp-item"><span class="icon">💳</span> Financing Available</div>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Shop the Collection</span>
+      <h2>Best Selling Wood Fired Hot Tubs</h2>
+      <p>Each tub is handcrafted from rot-resistant Scandinavian spruce and shipped fully assembled, ready for your backyard.</p>
+    </div>
+    <div class="product-grid" id="homeProductGrid"></div>
+    <div style="text-align:center;margin-top:48px;">
+      <a href="shop.html" class="btn btn-dark">View All Hot Tubs</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad" style="background:var(--cream-dark);">
+  <div class="container">
+    <div class="split">
+      <div class="img-box" style="background-image:url('https://images.unsplash.com/photo-1601233749377-c1b2b6f6a8c6?q=80&w=1200&auto=format&fit=crop')"></div>
+      <div class="split-text">
+        <span class="eyebrow">The Scandiihaus Difference</span>
+        <h2>Unparalleled Craftsmanship, Exceptional Value</h2>
+        <p>For generations, Scandinavians have gathered around fire-heated water as a ritual of warmth, connection and calm. We build that ritual into every tub we ship — no shortcuts, no plastic shells, just real wood and real fire.</p>
+        <ul class="feature-list">
+          <li><span class="tick">✓</span> Sustainably sourced spruce &amp; cedar construction</li>
+          <li><span class="tick">✓</span> External wood-fired stove — heats naturally, no power bill</li>
+          <li><span class="tick">✓</span> Optional jets &amp; ambient LED lighting</li>
+          <li><span class="tick">✓</span> Delivered fully assembled across North America</li>
+        </ul>
+        <a href="about.html" class="btn btn-dark" style="margin-top:28px;">Learn Our Story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad testimonial-strip">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What Our Customers Say</span>
+      <h2>Loved by Backyards Across the Continent</h2>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"Our wood-fired hot tub has become the center of serenity in our backyard. Worth every penny."</p>
+        <p class="who">Elizabeth R.<span>Northern California</span></p>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"Setup was simple and the quality is incredible. We use it almost every night, even through winter."</p>
+        <p class="who">Marcus T.<span>Ontario, Canada</span></p>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★☆</div>
+        <p class="quote">"The craftsmanship is obvious the moment it arrives. Heats up faster than we expected too."</p>
+        <p class="who">Dana K.<span>Vermont</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <h2>Join the Scandiihaus Family</h2>
+  <p>Get exclusive offers, backyard inspiration and early access to new arrivals.</p>
+  <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+    <input type="email" placeholder="Email address" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h3>Scandiihaus</h3>
+      <p>Handcrafted wood fired hot tubs and saunas, designed in the Scandinavian tradition for backyards everywhere.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="Facebook">f</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="shop.html?cat=hot-tubs">Hot Tubs</a>
+      <a href="shop.html?cat=accessories">Accessories</a>
+      <a href="shop.html">All Products</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="about.html">Our Story</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html">Warranty</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="contact.html">Shipping &amp; Returns</a>
+      <a href="contact.html">FAQ</a>
+      <a href="contact.html">Track Order</a>
+    </div>
+    <div class="footer-col footer-newsletter">
+      <h4>Get In Touch</h4>
+      <p>1-888-778-7811<br>hello@scandiihaus.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Scandiihaus. All rights reserved.</p>
+    <p>Designed with care, built to last.</p>
+  </div>
+</footer>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h3>Your Bag</h3>
+    <button class="cart-close" id="cartClose">×</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer">
+    <div class="cart-subtotal"><span>Subtotal</span><span id="cartSubtotal">$0.00</span></div>
+    <button class="btn btn-dark btn-block" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+
+<script src="js/main.js"></script>
+<script>
+loadProducts().then((products) => {
+  const featured = products.filter(p => p.category === 'hot-tubs');
+  const grid = document.getElementById('homeProductGrid');
+  grid.innerHTML = featured.map(p => `
+    <a href="product.html?id=${p.id}" class="product-card">
+      <div class="thumb">
+        ${p.badge ? `<span class="badge">${p.badge}</span>` : ''}
+        <div class="img-box" style="background-image:url('${p.image}')"></div>
+      </div>
+      <div class="info">
+        <p class="cap">${p.capacity}</p>
+        <h3>${p.name}</h3>
+        <div class="price-row">
+          <span class="price-now">$${p.price.toLocaleString()}</span>
+          ${p.compareAt ? `<span class="price-was">$${p.compareAt.toLocaleString()}</span>` : ''}
+        </div>
+        <div class="stars">${starString(p.rating)} <span style="color:var(--text-muted);">(${p.reviews})</span></div>
+      </div>
+    </a>`).join('');
+});
+</script>
+</body>
+</html>

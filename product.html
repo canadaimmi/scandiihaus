@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pageTitle">Product | Scandiihaus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="announce-bar">Father's Day Sale — <span>$3,500 OFF</span> all Hot Tubs &amp; Saunas, while supplies last</div>
+
+<header class="site-header">
+  <div class="nav-main">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">☰</button>
+    <a href="index.html" class="nav-logo">Scandii<span>haus</span></a>
+    <ul class="nav-links">
+      <li class="has-dropdown">
+        <a href="shop.html">Hot Tubs</a>
+        <div class="dropdown">
+          <div class="dropdown-col">
+            <h4>Shop Hot Tubs</h4>
+            <a href="shop.html?cat=hot-tubs">All Hot Tubs</a>
+            <a href="product.html?id=eco-lux-7-8">Eco Lux 7-8 Person</a>
+            <a href="product.html?id=eco-lux-5-6">Eco Lux 5-6 Person</a>
+            <a href="product.html?id=premium-5-6">Premium 5-6 Person</a>
+          </div>
+          <div class="dropdown-col">
+            <h4>Accessories</h4>
+            <a href="shop.html?cat=accessories">All Accessories</a>
+            <a href="product.html?id=insulated-cover">Insulated Covers</a>
+            <a href="product.html?id=led-light-kit">LED Light Kits</a>
+            <a href="product.html?id=hot-tub-steps">Cedar Steps</a>
+          </div>
+          <div class="dropdown-promo">
+            <img src="https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=600&auto=format&fit=crop" alt="Eco Lux hot tub">
+            <p>Save up to $3,500 this week</p>
+          </div>
+        </div>
+      </li>
+      <li><a href="shop.html?cat=accessories">Accessories</a></li>
+      <li><a href="about.html">Our Story</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="nav-icon-btn" aria-label="Search">⚲</button>
+      <button class="nav-icon-btn" id="cartBtn" aria-label="Cart">⛃<span class="cart-dot" id="cartDot"></span></button>
+      <a href="contact.html" class="help-link btn btn-dark" style="padding:10px 20px;">Get a Quote</a>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <button class="mobile-nav-close" id="mobileNavClose">×</button>
+  <a href="shop.html?cat=hot-tubs">Hot Tubs</a>
+  <a href="shop.html?cat=accessories">Accessories</a>
+  <a href="about.html">Our Story</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="section-pad" style="padding-top:40px;">
+  <div class="container">
+    <p class="breadcrumb" style="margin-bottom:20px;color:var(--text-muted);"><a href="index.html">Home</a> / <a href="shop.html">Shop</a> / <span id="bcName"></span></p>
+    <div class="product-detail" id="productDetail"></div>
+  </div>
+</section>
+
+<section class="section-pad" style="background:var(--cream-dark);">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Frequently Asked</span>
+      <h2>Common Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <div class="faq-q"><span>How long does it take the water to heat up?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>Most tubs reach a comfortable soaking temperature in 2-4 hours depending on outdoor temperature and how full you keep the fire.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Do I need an electrician or plumber to install it?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>No. Our wood fired tubs require no electrical or plumbing hookup — simply fill with a garden hose and light the stove.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>What's included in the warranty?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>Every tub ships with a 5-year structural warranty covering the wood shell and stove components.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>How is it shipped?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>Tubs ship fully assembled by freight carrier with free delivery across the continental US and Canada.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h3>Scandiihaus</h3>
+      <p>Handcrafted wood fired hot tubs and saunas, designed in the Scandinavian tradition for backyards everywhere.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="Facebook">f</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="shop.html?cat=hot-tubs">Hot Tubs</a>
+      <a href="shop.html?cat=accessories">Accessories</a>
+      <a href="shop.html">All Products</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="about.html">Our Story</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html">Warranty</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="contact.html">Shipping &amp; Returns</a>
+      <a href="contact.html">FAQ</a>
+      <a href="contact.html">Track Order</a>
+    </div>
+    <div class="footer-col footer-newsletter">
+      <h4>Get In Touch</h4>
+      <p>1-888-778-7811<br>hello@scandiihaus.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Scandiihaus. All rights reserved.</p>
+    <p>Designed with care, built to last.</p>
+  </div>
+</footer>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h3>Your Bag</h3>
+    <button class="cart-close" id="cartClose">×</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer">
+    <div class="cart-subtotal"><span>Subtotal</span><span id="cartSubtotal">$0.00</span></div>
+    <button class="btn btn-dark btn-block" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+
+<script src="js/main.js"></script>
+<script>
+const id = new URLSearchParams(location.search).get('id') || 'eco-lux-7-8';
+
+loadProducts().then((products) => {
+  const p = products.find(x => x.id === id) || products[0];
+  document.title = `${p.name} | Scandiihaus`;
+  document.getElementById('bcName').textContent = p.name;
+
+  document.getElementById('productDetail').innerHTML = `
+    <div class="pd-gallery">
+      <div class="gallery-main" id="galleryMain" style="background-image:url('${p.gallery[0]}')"></div>
+      <div class="gallery-thumbs">
+        ${p.gallery.map((g,n) => `<div class="img-box ${n===0?'active':''}" data-img="${g}" style="background-image:url('${g}')"></div>`).join('')}
+      </div>
+    </div>
+    <div class="pd-info">
+      <div class="pd-title">
+        <p class="cap" style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;">${p.capacity}</p>
+        <h1>${p.name}</h1>
+        <div class="stars">${starString(p.rating)} <span style="color:var(--text-muted);">(${p.reviews} reviews)</span></div>
+      </div>
+      <div class="pd-price">
+        <span class="now">$${p.price.toLocaleString()}</span>
+        ${p.compareAt ? `<span class="was">$${p.compareAt.toLocaleString()}</span>` : ''}
+      </div>
+      ${p.compareAt ? `<span class="pd-save">Save $${(p.compareAt - p.price).toLocaleString()}</span>` : ''}
+      <p class="pd-desc">${p.summary}</p>
+      <div class="option-group">
+        <h4>Features</h4>
+        <ul class="feature-list">
+          ${p.features.map(f => `<li><span class="tick">✓</span> ${f}</li>`).join('')}
+        </ul>
+      </div>
+      <div class="qty-row">
+        <div class="qty-control">
+          <button id="qtyMinus">−</button>
+          <input type="text" id="qtyInput" value="1" readonly>
+          <button id="qtyPlus">+</button>
+        </div>
+      </div>
+      <div class="pd-actions">
+        <button class="btn btn-dark btn-block" id="addToCartBtn">Add to Cart — $${p.price.toLocaleString()}</button>
+        <a href="contact.html" class="btn btn-outline-light btn-block" style="border-color:var(--charcoal);color:var(--charcoal);">Request a Custom Quote</a>
+      </div>
+      <div class="pd-trust">
+        <span>🚚 Free shipping</span>
+        <span>🛡️ 5-year warranty</span>
+        <span>↩ 30-day returns</span>
+      </div>
+    </div>
+  `;
+
+  document.querySelectorAll('.gallery-thumbs .img-box').forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      document.getElementById('galleryMain').style.backgroundImage = `url('${thumb.dataset.img}')`;
+      document.querySelectorAll('.gallery-thumbs .img-box').forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+    });
+  });
+
+  document.getElementById('qtyPlus').addEventListener('click', () => {
+    const input = document.getElementById('qtyInput');
+    input.value = parseInt(input.value) + 1;
+  });
+  document.getElementById('qtyMinus').addEventListener('click', () => {
+    const input = document.getElementById('qtyInput');
+    input.value = Math.max(1, parseInt(input.value) - 1);
+  });
+
+  document.getElementById('addToCartBtn').addEventListener('click', (e) => {
+    e.preventDefault();
+    const qty = parseInt(document.getElementById('qtyInput').value) || 1;
+    Cart.add({ id: p.id, name: p.name, price: p.price, image: p.gallery[0], qty });
+  });
+});
+</script>
+</body>
+</html>
