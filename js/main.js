@@ -1,3 +1,346 @@
+/* ===== Product data (embedded so site works without a server) ===== */
+const PRODUCTS = [
+  {
+    "id": "eco-lux-7-8",
+    "name": "Scandinavian Eco Lux Wood Fired Hot Tub",
+    "capacity": "7-8 Person",
+    "category": "hot-tubs",
+    "badge": "Sale",
+    "price": 8895,
+    "compareAt": 12395,
+    "rating": 5,
+    "reviews": 38,
+    "image": "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=900&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1633512424746-0cb5240e064d?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1200&auto=format&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1733514433379-7db3a5094db4?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "summary": "Our largest Eco Lux model — handcrafted from sustainably sourced spruce with integrated jets and ambient LED lighting for a true backyard spa experience.",
+    "features": [
+      "Seats 7-8 adults comfortably",
+      "Includes hydrotherapy jets and underwater LED lights",
+      "External wood-fired stove heats water naturally, no electricity required",
+      "Built from rot-resistant Scandinavian spruce",
+      "Insulated cedar cover included"
+    ]
+  },
+  {
+    "id": "eco-lux-5-6",
+    "name": "Scandinavian Eco Lux Wood Fired Hot Tub",
+    "capacity": "5-6 Person",
+    "category": "hot-tubs",
+    "badge": "Sale",
+    "price": 7895,
+    "compareAt": 10895,
+    "rating": 5,
+    "reviews": 52,
+    "image": "https://images.unsplash.com/photo-1633512424746-0cb5240e064d?q=80&w=900&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1633512424746-0cb5240e064d?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1200&auto=format&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1733514433379-7db3a5094db4?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "summary": "Our most popular size — a perfect fit for families and patios, with the same jets, lighting and craftsmanship as our larger Eco Lux model.",
+    "features": [
+      "Seats 5-6 adults comfortably",
+      "Includes hydrotherapy jets and underwater LED lights",
+      "External wood-fired stove heats water naturally, no electricity required",
+      "Built from rot-resistant Scandinavian spruce",
+      "Insulated cedar cover included"
+    ]
+  },
+  {
+    "id": "premium-5-6",
+    "name": "Premium Wood Fired Hot Tub",
+    "capacity": "5-6 Person",
+    "category": "hot-tubs",
+    "badge": "Sale",
+    "price": 7895,
+    "compareAt": 11395,
+    "rating": 4.5,
+    "reviews": 21,
+    "image": "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=900&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1633512424746-0cb5240e064d?q=80&w=1200&auto=format&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1733514433379-7db3a5094db4?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "summary": "A timeless, no-frills wood fired tub for those who want the pure ritual of fire-heated water without the extras.",
+    "features": [
+      "Seats 5-6 adults comfortably",
+      "Classic exterior wood-fired stove",
+      "Built from rot-resistant Scandinavian spruce",
+      "Simple, low-maintenance design",
+      "Insulated cedar cover included"
+    ]
+  },
+  {
+    "id": "nordic-cabin-4-6",
+    "name": "Scandinavian Nordic Cabin Sauna",
+    "capacity": "4-6 Person",
+    "category": "outdoor-saunas",
+    "badge": "Sale",
+    "price": 9299,
+    "compareAt": 11599,
+    "rating": 5,
+    "reviews": 27,
+    "image": "https://images.unsplash.com/photo-1764942687903-3a5ce0cfbebc?q=80&w=900&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1764942687903-3a5ce0cfbebc?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1764942225260-4bd3400d9eba?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1764942394410-5b3f027b459b?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "summary": "Our largest outdoor cabin sauna — a full-size Scandinavian retreat with a panoramic glass front, cedar interior and traditional wood-fired stove.",
+    "features": [
+      "Seats 4-6 adults comfortably",
+      "Floor-to-ceiling tempered glass front",
+      "Traditional wood-fired stove, no electricity required",
+      "Built from rot-resistant thermo-treated spruce",
+      "Delivered pre-assembled on a shipping pallet"
+    ]
+  },
+  {
+    "id": "aurora-cube-2-3",
+    "name": "Scandinavian Aurora Cube Sauna",
+    "capacity": "2-3 Person",
+    "category": "outdoor-saunas",
+    "badge": "Sale",
+    "price": 7799,
+    "compareAt": 8999,
+    "rating": 4.5,
+    "reviews": 19,
+    "image": "https://images.unsplash.com/photo-1764942225260-4bd3400d9eba?q=80&w=900&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1764942225260-4bd3400d9eba?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1764942687903-3a5ce0cfbebc?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "summary": "A compact cube-style cabin sauna built for smaller patios and yards, with the same craftsmanship as our larger models in a space-saving footprint.",
+    "features": [
+      "Seats 2-3 adults comfortably",
+      "Compact 7x4 footprint, fits most patios",
+      "Traditional wood-fired stove, no electricity required",
+      "Built from rot-resistant thermo-treated spruce"
+    ]
+  },
+  {
+    "id": "fjord-barrel-4",
+    "name": "Scandinavian Fjord Barrel Sauna",
+    "capacity": "4 Person",
+    "category": "outdoor-saunas",
+    "badge": "Sale",
+    "price": 5295,
+    "compareAt": 6995,
+    "rating": 4.5,
+    "reviews": 33,
+    "image": "https://images.unsplash.com/photo-1788515917792-790e6b1d9af5?q=80&w=900&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1788515917792-790e6b1d9af5?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "summary": "The classic barrel silhouette, built for even heat distribution and quick heat-up — an affordable entry point into outdoor sauna living.",
+    "features": [
+      "Seats 4 adults comfortably",
+      "Curved barrel design promotes even heat circulation",
+      "Traditional wood-fired stove, no electricity required",
+      "Built from rot-resistant thermo-treated spruce"
+    ]
+  },
+  {
+    "id": "hearth-glass-2-3",
+    "name": "Scandinavian Hearth Glass Indoor Sauna",
+    "capacity": "2-3 Person",
+    "category": "indoor-saunas",
+    "badge": "Sale",
+    "price": 15999,
+    "compareAt": 19999,
+    "rating": 5,
+    "reviews": 16,
+    "image": "https://images.unsplash.com/photo-1790756548832-f85ec322b9bd?q=80&w=900&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1790756548832-f85ec322b9bd?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1790756548576-bf0dd2787b2a?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "summary": "A modern glass-front indoor sauna built to be the centerpiece of a home wellness room, with tiered cedar benches and an electric heater.",
+    "features": [
+      "Seats 2-3 adults comfortably",
+      "Floor-to-ceiling glass front and door",
+      "Electric heater with digital temperature control",
+      "Tiered cedar benches for layered heat zones"
+    ]
+  },
+  {
+    "id": "lumi-indoor-1-2",
+    "name": "Scandinavian Lumi Indoor Sauna",
+    "capacity": "1-2 Person",
+    "category": "indoor-saunas",
+    "badge": "New",
+    "price": 7499,
+    "compareAt": 7999,
+    "rating": 4.5,
+    "reviews": 8,
+    "image": "https://plus.unsplash.com/premium_photo-1746246341943-c54e2d3167bd?q=80&w=900&auto=format&fit=crop",
+    "gallery": [
+      "https://plus.unsplash.com/premium_photo-1746246341943-c54e2d3167bd?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "summary": "Our smallest indoor sauna — built to fit a spare room or basement corner without compromising on heat or build quality.",
+    "features": [
+      "Seats 1-2 adults comfortably",
+      "Compact footprint for basements and spare rooms",
+      "Electric heater with digital temperature control",
+      "Solid cedar interior construction"
+    ]
+  },
+  {
+    "id": "birchwood-indoor-3-4",
+    "name": "Scandinavian Birchwood Indoor Sauna",
+    "capacity": "3-4 Person",
+    "category": "indoor-saunas",
+    "badge": "Sale",
+    "price": 9299,
+    "compareAt": 9999,
+    "rating": 4.5,
+    "reviews": 12,
+    "image": "https://images.unsplash.com/photo-1790756548576-bf0dd2787b2a?q=80&w=900&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1790756548576-bf0dd2787b2a?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1790756548832-f85ec322b9bd?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "summary": "A family-size indoor sauna with facing benches, finished in warm birchwood for a bright, traditional Scandinavian feel.",
+    "features": [
+      "Seats 3-4 adults comfortably with facing benches",
+      "Electric heater with digital temperature control",
+      "Bright birchwood interior finish",
+      "Simple bolt-together assembly"
+    ]
+  },
+  {
+    "id": "arctic-plunge-1",
+    "name": "Scandinavian Arctic Cold Plunge",
+    "capacity": "1 Person",
+    "category": "cold-plunges",
+    "badge": "Sale",
+    "price": 6299,
+    "compareAt": 6999,
+    "rating": 5,
+    "reviews": 24,
+    "image": "https://images.unsplash.com/photo-1676776293435-5d521c57944f?q=80&w=900&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1676776293435-5d521c57944f?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "summary": "A single-person cold plunge with an integrated water chiller, built for daily recovery routines in a compact footprint.",
+    "features": [
+      "Integrated water chiller holds 39-50°F",
+      "Seats 1 adult comfortably",
+      "Insulated shell retains cold for longer sessions",
+      "Includes lid cover and water filtration"
+    ]
+  },
+  {
+    "id": "arctic-plunge-2",
+    "name": "Scandinavian Arctic Plus Cold Plunge",
+    "capacity": "2 Person",
+    "category": "cold-plunges",
+    "badge": "Sale",
+    "price": 6599,
+    "compareAt": 7499,
+    "rating": 4.5,
+    "reviews": 17,
+    "image": "https://images.unsplash.com/photo-1676776293165-bb72088680b6?q=80&w=900&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1676776293165-bb72088680b6?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "summary": "A wider two-person cold plunge with the same integrated chiller system, built for couples or side-by-side recovery sessions.",
+    "features": [
+      "Integrated water chiller holds 39-50°F",
+      "Seats 2 adults comfortably",
+      "Insulated shell retains cold for longer sessions",
+      "Includes lid cover and water filtration"
+    ]
+  },
+  {
+    "id": "glacier-cold-tub-2-4",
+    "name": "Scandinavian Glacier Cold Tub",
+    "capacity": "2-4 Person",
+    "category": "cold-plunges",
+    "badge": null,
+    "price": 6999,
+    "compareAt": 7799,
+    "rating": 4.5,
+    "reviews": 10,
+    "image": "https://images.unsplash.com/photo-1654183305001-62d2fdbd18f0?q=80&w=900&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1654183305001-62d2fdbd18f0?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "summary": "A circular cold tub sized for small groups, with an external chiller unit for consistent, ice-free cold therapy year-round.",
+    "features": [
+      "Integrated water chiller holds 39-50°F",
+      "Seats 2-4 adults comfortably",
+      "Circular shape for shared recovery sessions",
+      "Includes lid cover and water filtration"
+    ]
+  },
+  {
+    "id": "insulated-cover",
+    "name": "Insulated Cedar Cover",
+    "capacity": "Universal Fit",
+    "category": "accessories",
+    "badge": null,
+    "price": 395,
+    "compareAt": null,
+    "rating": 5,
+    "reviews": 14,
+    "image": "https://plus.unsplash.com/premium_photo-1733514433379-7db3a5094db4?q=80&w=900&auto=format&fit=crop",
+    "gallery": ["https://plus.unsplash.com/premium_photo-1733514433379-7db3a5094db4?q=80&w=1200&auto=format&fit=crop"],
+    "summary": "Keep heat in and debris out between soaks with our weatherproof insulated cedar cover.",
+    "features": ["Fits all Scandiihaus hot tub models", "Marine-grade vinyl shell", "Locking straps included"]
+  },
+  {
+    "id": "led-light-kit",
+    "name": "Underwater LED Light Kit",
+    "capacity": "Universal Fit",
+    "category": "accessories",
+    "badge": "New",
+    "price": 225,
+    "compareAt": null,
+    "rating": 4.5,
+    "reviews": 9,
+    "image": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=900&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=1200&auto=format&fit=crop"],
+    "summary": "Set the mood with colour-changing underwater lighting, remote-controlled from the deck of your tub.",
+    "features": ["7 colour modes", "Remote control included", "Easy retrofit install"]
+  },
+  {
+    "id": "hot-tub-steps",
+    "name": "Cedar Hot Tub Steps",
+    "capacity": "Universal Fit",
+    "category": "accessories",
+    "badge": null,
+    "price": 165,
+    "compareAt": null,
+    "rating": 4.5,
+    "reviews": 11,
+    "image": "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=900&auto=format&fit=crop",
+    "gallery": ["https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=1200&auto=format&fit=crop"],
+    "summary": "Solid cedar steps for safe, comfortable entry and exit, finished to match your tub.",
+    "features": ["Solid cedar construction", "Non-slip tread", "Weatherproof sealant finish"]
+  }
+];
+
+/* ===== Product data helper ===== */
+function loadProducts() {
+  return Promise.resolve(PRODUCTS);
+}
+
+/* ===== Star renderer ===== */
+function starString(rating) {
+  const full = Math.floor(rating);
+  const half = rating % 1 >= 0.5;
+  return '★'.repeat(full) + (half ? '☆' : '') + '☆'.repeat(5 - full - (half ? 1 : 0));
+}
+
 /* ===== Mobile nav ===== */
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const mobileNavOverlay = document.getElementById('mobileNavOverlay');
@@ -114,19 +457,6 @@ document.addEventListener('click', (e) => {
     qty: 1,
   });
 });
-
-/* ===== Product data fetch helper ===== */
-async function loadProducts() {
-  const res = await fetch('data/products.json');
-  return res.json();
-}
-
-/* ===== Star renderer ===== */
-function starString(rating) {
-  const full = Math.floor(rating);
-  const half = rating % 1 >= 0.5;
-  return '★'.repeat(full) + (half ? '☆' : '') + '☆'.repeat(5 - full - (half ? 1 : 0));
-}
 
 window.Cart = Cart;
 window.loadProducts = loadProducts;

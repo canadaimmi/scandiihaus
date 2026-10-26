@@ -19,7 +19,30 @@
     <a href="index.html" class="nav-logo">Scandii<span>haus</span></a>
     <ul class="nav-links">
       <li class="has-dropdown">
-        <a href="shop.html">Hot Tubs</a>
+        <a href="shop.html?cat=outdoor-saunas">Saunas</a>
+        <div class="dropdown">
+          <div class="dropdown-col">
+            <h4>Outdoor Saunas</h4>
+            <a href="shop.html?cat=outdoor-saunas">All Outdoor Saunas</a>
+            <a href="product.html?id=nordic-cabin-4-6">Nordic Cabin Sauna</a>
+            <a href="product.html?id=aurora-cube-2-3">Aurora Cube Sauna</a>
+            <a href="product.html?id=fjord-barrel-4">Fjord Barrel Sauna</a>
+          </div>
+          <div class="dropdown-col">
+            <h4>Indoor Saunas</h4>
+            <a href="shop.html?cat=indoor-saunas">All Indoor Saunas</a>
+            <a href="product.html?id=hearth-glass-2-3">Hearth Glass Sauna</a>
+            <a href="product.html?id=lumi-indoor-1-2">Lumi Indoor Sauna</a>
+            <a href="product.html?id=birchwood-indoor-3-4">Birchwood Sauna</a>
+          </div>
+          <div class="dropdown-promo">
+            <img src="https://images.unsplash.com/photo-1764942687903-3a5ce0cfbebc?q=80&w=600&auto=format&fit=crop" alt="Nordic Cabin Sauna">
+            <p>Save up to $3,500 this week</p>
+          </div>
+        </div>
+      </li>
+      <li class="has-dropdown">
+        <a href="shop.html?cat=hot-tubs">Hot Tubs</a>
         <div class="dropdown">
           <div class="dropdown-col">
             <h4>Shop Hot Tubs</h4>
@@ -29,11 +52,11 @@
             <a href="product.html?id=premium-5-6">Premium 5-6 Person</a>
           </div>
           <div class="dropdown-col">
-            <h4>Accessories</h4>
-            <a href="shop.html?cat=accessories">All Accessories</a>
-            <a href="product.html?id=insulated-cover">Insulated Covers</a>
-            <a href="product.html?id=led-light-kit">LED Light Kits</a>
-            <a href="product.html?id=hot-tub-steps">Cedar Steps</a>
+            <h4>Cold Plunges</h4>
+            <a href="shop.html?cat=cold-plunges">All Cold Plunges</a>
+            <a href="product.html?id=arctic-plunge-1">Arctic Cold Plunge</a>
+            <a href="product.html?id=arctic-plunge-2">Arctic Plus Cold Plunge</a>
+            <a href="product.html?id=glacier-cold-tub-2-4">Glacier Cold Tub</a>
           </div>
           <div class="dropdown-promo">
             <img src="https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=600&auto=format&fit=crop" alt="Eco Lux hot tub">
@@ -55,7 +78,10 @@
 
 <div class="mobile-nav-overlay" id="mobileNavOverlay">
   <button class="mobile-nav-close" id="mobileNavClose">×</button>
+  <a href="shop.html?cat=outdoor-saunas">Outdoor Saunas</a>
+  <a href="shop.html?cat=indoor-saunas">Indoor Saunas</a>
   <a href="shop.html?cat=hot-tubs">Hot Tubs</a>
+  <a href="shop.html?cat=cold-plunges">Cold Plunges</a>
   <a href="shop.html?cat=accessories">Accessories</a>
   <a href="about.html">Our Story</a>
   <a href="contact.html">Contact</a>
@@ -107,7 +133,10 @@
     </div>
     <div class="footer-col">
       <h4>Shop</h4>
+      <a href="shop.html?cat=outdoor-saunas">Outdoor Saunas</a>
+      <a href="shop.html?cat=indoor-saunas">Indoor Saunas</a>
       <a href="shop.html?cat=hot-tubs">Hot Tubs</a>
+      <a href="shop.html?cat=cold-plunges">Cold Plunges</a>
       <a href="shop.html?cat=accessories">Accessories</a>
       <a href="shop.html">All Products</a>
     </div>
@@ -147,6 +176,7 @@
   </div>
 </aside>
 
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
 <script src="js/main.js"></script>
 <script>
 const id = new URLSearchParams(location.search).get('id') || 'eco-lux-7-8';

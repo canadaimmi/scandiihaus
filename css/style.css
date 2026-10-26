@@ -158,6 +158,7 @@ section{position:relative;}
 .category-grid{
   display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
 }
+@media(min-width:1025px){.category-grid.cols-4{grid-template-columns:repeat(4,1fr);}}
 .category-cell{position:relative;display:block;height:420px;overflow:hidden;border-radius:var(--radius);}
 .category-cell .img-box{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .6s ease;}
 .category-cell:hover .img-box{transform:scale(1.06);}
