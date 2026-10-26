@@ -17,13 +17,14 @@ const PRODUCTS = [
       "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1200&auto=format&fit=crop",
       "https://plus.unsplash.com/premium_photo-1733514433379-7db3a5094db4?q=80&w=1200&auto=format&fit=crop"
     ],
-    "summary": "Our largest Eco Lux model — handcrafted from sustainably sourced spruce with integrated jets and ambient LED lighting for a true backyard spa experience.",
+    "summary": "The flagship of the Eco Lux line, built to host a full gathering. Integrated hydrotherapy jets and underwater LED lighting turn a simple soak into a backyard spa night, while the exterior wood-fired stove keeps the whole experience off the grid.",
     "features": [
-      "Seats 7-8 adults comfortably",
-      "Includes hydrotherapy jets and underwater LED lights",
-      "External wood-fired stove heats water naturally, no electricity required",
-      "Built from rot-resistant Scandinavian spruce",
-      "Insulated cedar cover included"
+      "Seats 7-8 adults with room to stretch out",
+      "Hydrotherapy jet system circulates heat evenly through the tub",
+      "Color-changing underwater LED lighting included",
+      "Exterior wood-fired stove reaches soaking temperature in 2-4 hours",
+      "Shell built from rot-resistant Scandinavian spruce, sealed for decades of use",
+      "Insulated cedar cover included to retain heat between soaks"
     ]
   },
   {
@@ -43,12 +44,13 @@ const PRODUCTS = [
       "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1200&auto=format&fit=crop",
       "https://plus.unsplash.com/premium_photo-1733514433379-7db3a5094db4?q=80&w=1200&auto=format&fit=crop"
     ],
-    "summary": "Our most popular size — a perfect fit for families and patios, with the same jets, lighting and craftsmanship as our larger Eco Lux model.",
+    "summary": "Our best-selling size — compact enough for a standard deck or patio, with the same jet system and lighting as the larger Eco Lux. Built for families who want the full spa experience without the footprint.",
     "features": [
       "Seats 5-6 adults comfortably",
-      "Includes hydrotherapy jets and underwater LED lights",
-      "External wood-fired stove heats water naturally, no electricity required",
-      "Built from rot-resistant Scandinavian spruce",
+      "Hydrotherapy jet system circulates heat evenly through the tub",
+      "Color-changing underwater LED lighting included",
+      "Exterior wood-fired stove reaches soaking temperature in 2-4 hours",
+      "Shell built from rot-resistant Scandinavian spruce",
       "Insulated cedar cover included"
     ]
   },
@@ -69,12 +71,12 @@ const PRODUCTS = [
       "https://images.unsplash.com/photo-1633512424746-0cb5240e064d?q=80&w=1200&auto=format&fit=crop",
       "https://plus.unsplash.com/premium_photo-1733514433379-7db3a5094db4?q=80&w=1200&auto=format&fit=crop"
     ],
-    "summary": "A timeless, no-frills wood fired tub for those who want the pure ritual of fire-heated water without the extras.",
+    "summary": "A pared-back alternative to the Eco Lux line for soakers who want the ritual of fire-heated water without jets or lighting to maintain. Same spruce construction, same heat, fewer moving parts.",
     "features": [
       "Seats 5-6 adults comfortably",
-      "Classic exterior wood-fired stove",
-      "Built from rot-resistant Scandinavian spruce",
-      "Simple, low-maintenance design",
+      "Classic exterior wood-fired stove, no jets or electronics",
+      "Shell built from rot-resistant Scandinavian spruce",
+      "Lower long-term maintenance than jetted models",
       "Insulated cedar cover included"
     ]
   },
@@ -94,13 +96,13 @@ const PRODUCTS = [
       "https://images.unsplash.com/photo-1764942225260-4bd3400d9eba?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1764942394410-5b3f027b459b?q=80&w=1200&auto=format&fit=crop"
     ],
-    "summary": "Our largest outdoor cabin sauna — a full-size Scandinavian retreat with a panoramic glass front, cedar interior and traditional wood-fired stove.",
+    "summary": "Our largest outdoor cabin — a stand-alone sauna room with a glass front that frames the yard while you sweat. Built like a small cottage, not a kit, with a traditional wood-fired stove at its center.",
     "features": [
-      "Seats 4-6 adults comfortably",
-      "Floor-to-ceiling tempered glass front",
-      "Traditional wood-fired stove, no electricity required",
-      "Built from rot-resistant thermo-treated spruce",
-      "Delivered pre-assembled on a shipping pallet"
+      "Seats 4-6 adults on tiered cedar benches",
+      "Floor-to-ceiling tempered glass front and door",
+      "Traditional wood-fired stove, no electrical hookup needed",
+      "Thermo-treated spruce shell resists rot and warping",
+      "Arrives pre-assembled on a shipping pallet"
     ]
   },
   {
@@ -118,12 +120,13 @@ const PRODUCTS = [
       "https://images.unsplash.com/photo-1764942225260-4bd3400d9eba?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1764942687903-3a5ce0cfbebc?q=80&w=1200&auto=format&fit=crop"
     ],
-    "summary": "A compact cube-style cabin sauna built for smaller patios and yards, with the same craftsmanship as our larger models in a space-saving footprint.",
+    "summary": "A cube-shaped cabin sauna sized for a smaller yard or side patio, without cutting corners on build quality. Same stove, same spruce, in a tighter footprint.",
     "features": [
-      "Seats 2-3 adults comfortably",
-      "Compact 7x4 footprint, fits most patios",
-      "Traditional wood-fired stove, no electricity required",
-      "Built from rot-resistant thermo-treated spruce"
+      "Seats 2-3 adults",
+      "Compact 7x4 ft footprint fits most patios and side yards",
+      "Traditional wood-fired stove, no electrical hookup needed",
+      "Thermo-treated spruce shell resists rot and warping",
+      "Tempered-glass door and window for natural light"
     ]
   },
   {
@@ -140,12 +143,13 @@ const PRODUCTS = [
     "gallery": [
       "https://images.unsplash.com/photo-1788515917792-790e6b1d9af5?q=80&w=1200&auto=format&fit=crop"
     ],
-    "summary": "The classic barrel silhouette, built for even heat distribution and quick heat-up — an affordable entry point into outdoor sauna living.",
+    "summary": "The classic barrel shape, chosen because it works: the curved roof circulates heat evenly from floor to ceiling and sheds rain and snow on its own. An affordable way into outdoor sauna ownership.",
     "features": [
-      "Seats 4 adults comfortably",
-      "Curved barrel design promotes even heat circulation",
-      "Traditional wood-fired stove, no electricity required",
-      "Built from rot-resistant thermo-treated spruce"
+      "Seats 4 adults",
+      "Curved barrel roof promotes even heat distribution",
+      "Traditional wood-fired stove, no electrical hookup needed",
+      "Thermo-treated spruce shell resists rot and warping",
+      "Lowest-maintenance outdoor model in the lineup"
     ]
   },
   {
@@ -163,12 +167,13 @@ const PRODUCTS = [
       "https://images.unsplash.com/photo-1790756548832-f85ec322b9bd?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1790756548576-bf0dd2787b2a?q=80&w=1200&auto=format&fit=crop"
     ],
-    "summary": "A modern glass-front indoor sauna built to be the centerpiece of a home wellness room, with tiered cedar benches and an electric heater.",
+    "summary": "Built to be the centerpiece of a home wellness room rather than tucked in a corner. A full glass front lets the sauna double as a design feature, with tiered benches and a fast-heating electric unit underneath.",
     "features": [
-      "Seats 2-3 adults comfortably",
+      "Seats 2-3 adults on tiered cedar benches",
       "Floor-to-ceiling glass front and door",
-      "Electric heater with digital temperature control",
-      "Tiered cedar benches for layered heat zones"
+      "Electric heater with digital temperature and timer control",
+      "Tiered benches separate upper and lower heat zones",
+      "Suited to basements, home gyms and spare rooms with ceiling to spare"
     ]
   },
   {
@@ -185,12 +190,13 @@ const PRODUCTS = [
     "gallery": [
       "https://plus.unsplash.com/premium_photo-1746246341943-c54e2d3167bd?q=80&w=1200&auto=format&fit=crop"
     ],
-    "summary": "Our smallest indoor sauna — built to fit a spare room or basement corner without compromising on heat or build quality.",
+    "summary": "Our smallest indoor sauna, sized for a single person or a couple and built to slot into a spare room or basement corner that a full-size cabin never would.",
     "features": [
-      "Seats 1-2 adults comfortably",
+      "Seats 1-2 adults",
       "Compact footprint for basements and spare rooms",
-      "Electric heater with digital temperature control",
-      "Solid cedar interior construction"
+      "Electric heater with digital temperature and timer control",
+      "Solid cedar interior, assembled on site",
+      "Lowest price point in the indoor sauna lineup"
     ]
   },
   {
@@ -208,12 +214,13 @@ const PRODUCTS = [
       "https://images.unsplash.com/photo-1790756548576-bf0dd2787b2a?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1790756548832-f85ec322b9bd?q=80&w=1200&auto=format&fit=crop"
     ],
-    "summary": "A family-size indoor sauna with facing benches, finished in warm birchwood for a bright, traditional Scandinavian feel.",
+    "summary": "A family-size indoor sauna finished in birchwood for a brighter, more traditional Scandinavian look than our glass models. Facing benches keep the whole group together.",
     "features": [
-      "Seats 3-4 adults comfortably with facing benches",
-      "Electric heater with digital temperature control",
+      "Seats 3-4 adults on facing benches",
+      "Electric heater with digital temperature and timer control",
       "Bright birchwood interior finish",
-      "Simple bolt-together assembly"
+      "Simple bolt-together assembly, no contractor required",
+      "Fits standard 8-ft ceiling heights"
     ]
   },
   {
@@ -230,12 +237,13 @@ const PRODUCTS = [
     "gallery": [
       "https://images.unsplash.com/photo-1676776293435-5d521c57944f?q=80&w=1200&auto=format&fit=crop"
     ],
-    "summary": "A single-person cold plunge with an integrated water chiller, built for daily recovery routines in a compact footprint.",
+    "summary": "A single-person cold plunge built for a daily recovery habit, not an occasional novelty. The integrated chiller holds a consistent temperature year-round, no ice runs required.",
     "features": [
-      "Integrated water chiller holds 39-50°F",
-      "Seats 1 adult comfortably",
-      "Insulated shell retains cold for longer sessions",
-      "Includes lid cover and water filtration"
+      "Integrated water chiller holds 39-50°F automatically",
+      "Seats 1 adult",
+      "Insulated shell holds temperature between sessions",
+      "Includes lid cover and water filtration",
+      "Plug-in operation, no plumbing required"
     ]
   },
   {
@@ -252,12 +260,13 @@ const PRODUCTS = [
     "gallery": [
       "https://images.unsplash.com/photo-1676776293165-bb72088680b6?q=80&w=1200&auto=format&fit=crop"
     ],
-    "summary": "A wider two-person cold plunge with the same integrated chiller system, built for couples or side-by-side recovery sessions.",
+    "summary": "The two-person version of our Arctic plunge, wide enough for a partner or training buddy without giving up any of the chiller performance.",
     "features": [
-      "Integrated water chiller holds 39-50°F",
-      "Seats 2 adults comfortably",
-      "Insulated shell retains cold for longer sessions",
-      "Includes lid cover and water filtration"
+      "Integrated water chiller holds 39-50°F automatically",
+      "Seats 2 adults side-by-side",
+      "Insulated shell holds temperature between sessions",
+      "Includes lid cover and water filtration",
+      "Plug-in operation, no plumbing required"
     ]
   },
   {
@@ -274,12 +283,13 @@ const PRODUCTS = [
     "gallery": [
       "https://images.unsplash.com/photo-1654183305001-62d2fdbd18f0?q=80&w=1200&auto=format&fit=crop"
     ],
-    "summary": "A circular cold tub sized for small groups, with an external chiller unit for consistent, ice-free cold therapy year-round.",
+    "summary": "A circular cold tub sized for small groups or a shared backyard setup, paired with an external chiller for ice-free cold therapy whenever you want it.",
     "features": [
-      "Integrated water chiller holds 39-50°F",
-      "Seats 2-4 adults comfortably",
-      "Circular shape for shared recovery sessions",
-      "Includes lid cover and water filtration"
+      "Integrated water chiller holds 39-50°F automatically",
+      "Seats 2-4 adults in a circular layout",
+      "Insulated shell holds temperature between sessions",
+      "Includes lid cover and water filtration",
+      "External chiller sized for the larger water volume"
     ]
   },
   {
@@ -294,8 +304,8 @@ const PRODUCTS = [
     "reviews": 14,
     "image": "https://plus.unsplash.com/premium_photo-1733514433379-7db3a5094db4?q=80&w=900&auto=format&fit=crop",
     "gallery": ["https://plus.unsplash.com/premium_photo-1733514433379-7db3a5094db4?q=80&w=1200&auto=format&fit=crop"],
-    "summary": "Keep heat in and debris out between soaks with our weatherproof insulated cedar cover.",
-    "features": ["Fits all Scandiihaus hot tub models", "Marine-grade vinyl shell", "Locking straps included"]
+    "summary": "A weatherproof cover built to match your tub, keeping heat in and leaves, dust and curious pets out between soaks.",
+    "features": ["Fits all Scandiihaus hot tub models", "Marine-grade vinyl shell resists UV and moisture", "Insulated core slows heat loss between soaks", "Locking straps included for wind resistance"]
   },
   {
     "id": "led-light-kit",
@@ -309,8 +319,8 @@ const PRODUCTS = [
     "reviews": 9,
     "image": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=900&auto=format&fit=crop",
     "gallery": ["https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=1200&auto=format&fit=crop"],
-    "summary": "Set the mood with colour-changing underwater lighting, remote-controlled from the deck of your tub.",
-    "features": ["7 colour modes", "Remote control included", "Easy retrofit install"]
+    "summary": "A retrofit lighting kit that brings the ambient glow of our Eco Lux tubs to any Scandiihaus model, controlled from the deck.",
+    "features": ["7 colour modes plus a slow-fade ambient setting", "Remote control included", "Fits standard underwater mounting points", "Simple retrofit install, no rewiring required"]
   },
   {
     "id": "hot-tub-steps",
@@ -324,8 +334,8 @@ const PRODUCTS = [
     "reviews": 11,
     "image": "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=900&auto=format&fit=crop",
     "gallery": ["https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=1200&auto=format&fit=crop"],
-    "summary": "Solid cedar steps for safe, comfortable entry and exit, finished to match your tub.",
-    "features": ["Solid cedar construction", "Non-slip tread", "Weatherproof sealant finish"]
+    "summary": "Solid cedar steps built for safe entry and exit, finished to match the tone of your tub rather than looking like a hardware-store add-on.",
+    "features": ["Solid cedar construction", "Non-slip textured tread", "Weatherproof sealant finish matches tub tone", "Rated for everyday use in wet conditions"]
   }
 ];
 
