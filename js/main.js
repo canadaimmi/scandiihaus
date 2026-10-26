@@ -1,473 +1,561 @@
-/* ===== Product data (embedded so site works without a server) ===== */
+/* ==========================================================================
+   Scandiihaus — product catalogue + site behaviour
+   Data is embedded so the site runs from the filesystem with no server.
+   ========================================================================== */
+
 const PRODUCTS = [
+  /* ---------- Barrel saunas ---------- */
   {
-    "id": "eco-lux-7-8",
-    "name": "Scandinavian Eco Lux Wood Fired Hot Tub",
-    "capacity": "7-8 Person",
-    "category": "hot-tubs",
-    "badge": "Sale",
-    "price": 8895,
-    "compareAt": 12395,
-    "rating": 5,
-    "reviews": 38,
-    "image": "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=900&auto=format&fit=crop",
-    "gallery": [
-      "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1633512424746-0cb5240e064d?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1200&auto=format&fit=crop",
-      "https://plus.unsplash.com/premium_photo-1733514433379-7db3a5094db4?q=80&w=1200&auto=format&fit=crop"
+    id: 'cedarhavn-barrel-4-6',
+    name: 'Cedarhavn Barrel Sauna',
+    variant: '4–6 Person',
+    capacity: '4–6 Person',
+    category: 'barrel-saunas',
+    categoryLabel: 'Barrel Saunas',
+    badge: 'Best Seller',
+    badgeTone: 'teal',
+    price: 10999,
+    compareAt: null,
+    rating: 5,
+    reviews: 18,
+    image: 'images/sauna-cedarhavn-barrel.png',
+    gallery: [
+      'images/sauna-cedarhavn-barrel.png',
+      'images/sauna-interior-barrel.png',
+      'images/sauna-interior-pine.png'
     ],
-    "summary": "The flagship of the Eco Lux line, built to host a full gathering. Integrated hydrotherapy jets and underwater LED lighting turn a simple soak into a backyard spa night, while the exterior wood-fired stove keeps the whole experience off the grid.",
-    "features": [
-      "Seats 7-8 adults with room to stretch out",
-      "Hydrotherapy jet system circulates heat evenly through the tub",
-      "Color-changing underwater LED lighting included",
-      "Exterior wood-fired stove reaches soaking temperature in 2-4 hours",
-      "Shell built from rot-resistant Scandinavian spruce, sealed for decades of use",
-      "Insulated cedar cover included to retain heat between soaks"
+    summary:
+      'Western red cedar, bent into the shape that heats best. The curved roof pulls steam down and around rather than letting it stack in the peak, so the bench is usable within about half an hour of lighting the stove.',
+    specs: [
+      'Seats 4–6 adults on facing benches',
+      'Clear western red cedar staves with steel banding',
+      'Tempered glass door with cedar frame',
+      'Wood-burning heater with stone cradle included',
+      'Cradle mounts — no concrete pad required'
     ]
   },
   {
-    "id": "eco-lux-5-6",
-    "name": "Scandinavian Eco Lux Wood Fired Hot Tub",
-    "capacity": "5-6 Person",
-    "category": "hot-tubs",
-    "badge": "Sale",
-    "price": 7895,
-    "compareAt": 10895,
-    "rating": 5,
-    "reviews": 52,
-    "image": "https://images.unsplash.com/photo-1633512424746-0cb5240e064d?q=80&w=900&auto=format&fit=crop",
-    "gallery": [
-      "https://images.unsplash.com/photo-1633512424746-0cb5240e064d?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1200&auto=format&fit=crop",
-      "https://plus.unsplash.com/premium_photo-1733514433379-7db3a5094db4?q=80&w=1200&auto=format&fit=crop"
+    id: 'cedarhavn-barrel-6-8',
+    name: 'Cedarhavn Barrel Sauna',
+    variant: '6–8 Person',
+    capacity: '6–8 Person',
+    category: 'barrel-saunas',
+    categoryLabel: 'Barrel Saunas',
+    badge: null,
+    badgeTone: 'teal',
+    price: 12999,
+    compareAt: null,
+    rating: 5,
+    reviews: 11,
+    image: 'images/sauna-cedarhavn-barrel.png',
+    gallery: [
+      'images/sauna-cedarhavn-barrel.png',
+      'images/sauna-interior-barrel.png',
+      'images/sauna-interior-pine.png'
     ],
-    "summary": "Our best-selling size — compact enough for a standard deck or patio, with the same jet system and lighting as the larger Eco Lux. Built for families who want the full spa experience without the footprint.",
-    "features": [
-      "Seats 5-6 adults comfortably",
-      "Hydrotherapy jet system circulates heat evenly through the tub",
-      "Color-changing underwater LED lighting included",
-      "Exterior wood-fired stove reaches soaking temperature in 2-4 hours",
-      "Shell built from rot-resistant Scandinavian spruce",
-      "Insulated cedar cover included"
+    summary:
+      'The long-format Cedarhavn, built for families and for anyone who hosts. Two extra feet of barrel length turn a tight four-seater into a room where six to eight people can sit without negotiating knees.',
+    specs: [
+      'Seats 6–8 adults on facing benches',
+      'Clear western red cedar staves with steel banding',
+      'Tempered glass door with cedar frame',
+      'Larger-capacity wood-burning heater included',
+      'Cradle mounts — no concrete pad required'
+    ]
+  },
+
+  /* ---------- Cabin saunas ---------- */
+  {
+    id: 'nordhavn-haus-4',
+    name: 'Nordhavn Haus Premium Outdoor Sauna',
+    variant: '4 Person',
+    capacity: '4 Person',
+    category: 'cabin-saunas',
+    categoryLabel: 'Cabin Saunas',
+    badge: null,
+    badgeTone: 'teal',
+    price: 13999,
+    compareAt: null,
+    rating: 5,
+    reviews: 9,
+    image: 'images/sauna-nordhavn-corner.png',
+    gallery: [
+      'images/sauna-nordhavn-corner.png',
+      'images/sauna-nordhavn-angle.png',
+      'images/sauna-interior-pine.png'
+    ],
+    summary:
+      'A proper outbuilding rather than a kit. Charred-timber cladding, a flat roof and a full corner of glass — it reads as architecture in the yard, and the backlit benches make it usable as an evening room, not just a sweat box.',
+    specs: [
+      'Seats 4 adults on tiered benches',
+      'Corner glazing with full-height glass door',
+      'Charred timber exterior cladding, knotless pine interior',
+      'Backlit bench lighting and stone-cradle heater',
+      'Delivered assembled and ready to site'
     ]
   },
   {
-    "id": "premium-5-6",
-    "name": "Premium Wood Fired Hot Tub",
-    "capacity": "5-6 Person",
-    "category": "hot-tubs",
-    "badge": "Sale",
-    "price": 7895,
-    "compareAt": 11395,
-    "rating": 4.5,
-    "reviews": 21,
-    "image": "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=900&auto=format&fit=crop",
-    "gallery": [
-      "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1633512424746-0cb5240e064d?q=80&w=1200&auto=format&fit=crop",
-      "https://plus.unsplash.com/premium_photo-1733514433379-7db3a5094db4?q=80&w=1200&auto=format&fit=crop"
+    id: 'nordhavn-haus-xl',
+    name: 'Nordhavn Haus XL with Covered Pavilion',
+    variant: 'XL · Covered Pavilion',
+    capacity: '6+ Person',
+    category: 'cabin-saunas',
+    categoryLabel: 'Cabin Saunas',
+    badge: 'Flagship',
+    badgeTone: 'slate',
+    price: 20899,
+    compareAt: null,
+    rating: 5,
+    reviews: 6,
+    image: 'images/sauna-nordhavn-pavilion.png',
+    gallery: [
+      'images/sauna-nordhavn-pavilion.png',
+      'images/sauna-nordhavn-angle.png',
+      'images/sauna-interior-pine.png'
     ],
-    "summary": "A pared-back alternative to the Eco Lux line for soakers who want the ritual of fire-heated water without jets or lighting to maintain. Same spruce construction, same heat, fewer moving parts.",
-    "features": [
-      "Seats 5-6 adults comfortably",
-      "Classic exterior wood-fired stove, no jets or electronics",
-      "Shell built from rot-resistant Scandinavian spruce",
-      "Lower long-term maintenance than jetted models",
-      "Insulated cedar cover included"
+    summary:
+      'The Nordhavn Haus with a roofed pavilion built onto the end of it — somewhere to cool down, sit out the rain and keep a table and chairs. It is the difference between a sauna you visit and a space you spend the whole evening in.',
+    specs: [
+      'Sauna room plus roofed outdoor pavilion',
+      'Seats 6+ across sauna and covered seating',
+      'Slatted privacy screening to the pavilion end',
+      'Charred timber exterior, knotless pine interior',
+      'Delivered assembled and ready to site'
+    ]
+  },
+
+  /* ---------- Wood-fired hot tubs ---------- */
+  {
+    id: 'eco-lux-5-6',
+    name: 'Scandinavian Eco Lux Wood Fired Hot Tub',
+    variant: '5–6 Person',
+    capacity: '5–6 Person',
+    category: 'hot-tubs',
+    categoryLabel: 'Wood Fired Hot Tubs',
+    badge: null,
+    badgeTone: 'teal',
+    price: 10895,
+    compareAt: null,
+    rating: 5,
+    reviews: 24,
+    image: 'images/hot-tub-eco-lux-dark.png',
+    gallery: [
+      'images/hot-tub-eco-lux-dark.png',
+      'images/hot-tub-lake.jpg',
+      'images/hot-tub-deck-cabin.jpg',
+      'images/hot-tub-sunset.jpg'
+    ],
+    summary:
+      'Fire, water and time — nothing else. An external stove heats the water by convection, so there is no pump, no panel and no power bill. Thermo-treated timber outside, a moulded liner inside, and steps that match.',
+    specs: [
+      'Seats 5–6 adults comfortably',
+      'External wood-fired stove — no electrical hookup',
+      'Thermo-treated timber shell, moulded liner',
+      'Reaches soaking temperature in roughly 2–4 hours',
+      'Matching timber steps and insulated lid included'
     ]
   },
   {
-    "id": "nordic-cabin-4-6",
-    "name": "Scandinavian Nordic Cabin Sauna",
-    "capacity": "4-6 Person",
-    "category": "outdoor-saunas",
-    "badge": "Sale",
-    "price": 9299,
-    "compareAt": 11599,
-    "rating": 5,
-    "reviews": 27,
-    "image": "https://images.unsplash.com/photo-1764942687903-3a5ce0cfbebc?q=80&w=900&auto=format&fit=crop",
-    "gallery": [
-      "https://images.unsplash.com/photo-1764942687903-3a5ce0cfbebc?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1764942225260-4bd3400d9eba?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1764942394410-5b3f027b459b?q=80&w=1200&auto=format&fit=crop"
+    id: 'eco-lux-jets-5-6',
+    name: 'Scandinavian Eco Lux Hot Tub with Jets & Lights',
+    variant: '5–6 Person',
+    capacity: '5–6 Person',
+    category: 'hot-tubs',
+    categoryLabel: 'Wood Fired Hot Tubs',
+    badge: 'Most Popular',
+    badgeTone: 'teal',
+    price: 11395,
+    compareAt: null,
+    rating: 5,
+    reviews: 31,
+    image: 'images/hot-tub-eco-lux-white.png',
+    gallery: [
+      'images/hot-tub-eco-lux-white.png',
+      'images/hot-tub-ocean.png',
+      'images/hot-tub-joy.jpg',
+      'images/hot-tub-cabin-view.jpg'
     ],
-    "summary": "Our largest outdoor cabin — a stand-alone sauna room with a glass front that frames the yard while you sweat. Built like a small cottage, not a kit, with a traditional wood-fired stove at its center.",
-    "features": [
-      "Seats 4-6 adults on tiered cedar benches",
-      "Floor-to-ceiling tempered glass front and door",
-      "Traditional wood-fired stove, no electrical hookup needed",
-      "Thermo-treated spruce shell resists rot and warping",
-      "Arrives pre-assembled on a shipping pallet"
+    summary:
+      'The Eco Lux with hydrotherapy jets and underwater lighting added. You keep the wood-fired heat and gain the parts of a modern spa worth having — moving water on your shoulders and a glow you can sit in after dark.',
+    specs: [
+      'Seats 5–6 adults comfortably',
+      'Hydrotherapy jet system with air control',
+      'Colour-changing underwater LED lighting',
+      'External wood-fired stove — heat needs no power',
+      'Matching timber steps and insulated lid included'
     ]
   },
   {
-    "id": "aurora-cube-2-3",
-    "name": "Scandinavian Aurora Cube Sauna",
-    "capacity": "2-3 Person",
-    "category": "outdoor-saunas",
-    "badge": "Sale",
-    "price": 7799,
-    "compareAt": 8999,
-    "rating": 4.5,
-    "reviews": 19,
-    "image": "https://images.unsplash.com/photo-1764942225260-4bd3400d9eba?q=80&w=900&auto=format&fit=crop",
-    "gallery": [
-      "https://images.unsplash.com/photo-1764942225260-4bd3400d9eba?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1764942687903-3a5ce0cfbebc?q=80&w=1200&auto=format&fit=crop"
+    id: 'eco-lux-jets-7-8',
+    name: 'Scandinavian Eco Lux Hot Tub with Jets & Lights',
+    variant: '7–8 Person',
+    capacity: '7–8 Person',
+    category: 'hot-tubs',
+    categoryLabel: 'Wood Fired Hot Tubs',
+    badge: null,
+    badgeTone: 'teal',
+    price: 12395,
+    compareAt: null,
+    rating: 5,
+    reviews: 17,
+    image: 'images/hot-tub-eco-lux-white.png',
+    gallery: [
+      'images/hot-tub-eco-lux-white.png',
+      'images/hot-tub-deck-dusk.jpg',
+      'images/hot-tub-extra.jpg',
+      'images/hero-wide.jpg'
     ],
-    "summary": "A cube-shaped cabin sauna sized for a smaller yard or side patio, without cutting corners on build quality. Same stove, same spruce, in a tighter footprint.",
-    "features": [
-      "Seats 2-3 adults",
-      "Compact 7x4 ft footprint fits most patios and side yards",
-      "Traditional wood-fired stove, no electrical hookup needed",
-      "Thermo-treated spruce shell resists rot and warping",
-      "Tempered-glass door and window for natural light"
+    summary:
+      'The largest tub we build, with the full jet and lighting package. Eight adults fit without anyone perching on the edge, which makes it the one to choose if the tub is going to be the reason people come over.',
+    specs: [
+      'Seats 7–8 adults with room to stretch out',
+      'Hydrotherapy jet system with air control',
+      'Colour-changing underwater LED lighting',
+      'External wood-fired stove — heat needs no power',
+      'Matching timber steps and insulated lid included'
+    ]
+  },
+
+  /* ---------- Services ---------- */
+  {
+    id: 'expert-guidance',
+    name: 'Expert Guidance Package',
+    variant: 'Consultation',
+    capacity: 'Consultation',
+    category: 'services',
+    categoryLabel: 'Services',
+    badge: null,
+    badgeTone: 'teal',
+    price: 300,
+    compareAt: null,
+    rating: 5,
+    reviews: 7,
+    image: 'images/sauna-interior-pine.png',
+    gallery: ['images/sauna-interior-pine.png', 'images/sauna-nordhavn-angle.png'],
+    summary:
+      'A paid session with someone who has sited a lot of these. Bring your measurements, your access constraints and your shortlist, and leave knowing which model actually fits and what the groundwork will involve.',
+    specs: [
+      'One-to-one consultation on sizing and siting',
+      'Access, drainage and base preparation review',
+      'Model comparison against your shortlist',
+      'Written summary of recommendations',
+      'Fee credited against a later purchase'
     ]
   },
   {
-    "id": "fjord-barrel-4",
-    "name": "Scandinavian Fjord Barrel Sauna",
-    "capacity": "4 Person",
-    "category": "outdoor-saunas",
-    "badge": "Sale",
-    "price": 5295,
-    "compareAt": 6995,
-    "rating": 4.5,
-    "reviews": 33,
-    "image": "https://images.unsplash.com/photo-1788515917792-790e6b1d9af5?q=80&w=900&auto=format&fit=crop",
-    "gallery": [
-      "https://images.unsplash.com/photo-1788515917792-790e6b1d9af5?q=80&w=1200&auto=format&fit=crop"
-    ],
-    "summary": "The classic barrel shape, chosen because it works: the curved roof circulates heat evenly from floor to ceiling and sheds rain and snow on its own. An affordable way into outdoor sauna ownership.",
-    "features": [
-      "Seats 4 adults",
-      "Curved barrel roof promotes even heat distribution",
-      "Traditional wood-fired stove, no electrical hookup needed",
-      "Thermo-treated spruce shell resists rot and warping",
-      "Lowest-maintenance outdoor model in the lineup"
+    id: 'personal-solution-planning',
+    name: 'Personal Solution Planning',
+    variant: 'Design Service',
+    capacity: 'Design Service',
+    category: 'services',
+    categoryLabel: 'Services',
+    badge: null,
+    badgeTone: 'teal',
+    price: 1500,
+    compareAt: null,
+    rating: 5,
+    reviews: 4,
+    image: 'images/sauna-nordhavn-pavilion.png',
+    gallery: ['images/sauna-nordhavn-pavilion.png', 'images/hot-tub-deck-cabin.jpg'],
+    summary:
+      'For sites that need thinking about — slopes, tight access, decks that have to be built around the tub, or a sauna and hot tub that need to work as one arrangement. We plan the whole installation before anything ships.',
+    specs: [
+      'Full site assessment and measured plan',
+      'Layout drawings for sauna, tub and decking',
+      'Groundwork and access specification',
+      'Coordination with your trades',
+      'Fee credited against a later purchase'
     ]
   },
   {
-    "id": "hearth-glass-2-3",
-    "name": "Scandinavian Hearth Glass Indoor Sauna",
-    "capacity": "2-3 Person",
-    "category": "indoor-saunas",
-    "badge": "Sale",
-    "price": 15999,
-    "compareAt": 19999,
-    "rating": 5,
-    "reviews": 16,
-    "image": "https://images.unsplash.com/photo-1790756548832-f85ec322b9bd?q=80&w=900&auto=format&fit=crop",
-    "gallery": [
-      "https://images.unsplash.com/photo-1790756548832-f85ec322b9bd?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1790756548576-bf0dd2787b2a?q=80&w=1200&auto=format&fit=crop"
-    ],
-    "summary": "Built to be the centerpiece of a home wellness room rather than tucked in a corner. A full glass front lets the sauna double as a design feature, with tiered benches and a fast-heating electric unit underneath.",
-    "features": [
-      "Seats 2-3 adults on tiered cedar benches",
-      "Floor-to-ceiling glass front and door",
-      "Electric heater with digital temperature and timer control",
-      "Tiered benches separate upper and lower heat zones",
-      "Suited to basements, home gyms and spare rooms with ceiling to spare"
+    id: 'custom-project',
+    name: 'Custom Project',
+    variant: 'By Quotation',
+    capacity: 'By Quotation',
+    category: 'services',
+    categoryLabel: 'Services',
+    badge: 'Enquire',
+    badgeTone: 'slate',
+    price: null,
+    compareAt: null,
+    rating: 5,
+    reviews: 3,
+    image: 'images/sauna-nordhavn-angle.png',
+    gallery: ['images/sauna-nordhavn-angle.png', 'images/sauna-nordhavn-pavilion.png'],
+    summary:
+      'Dimensions, cladding, glazing and layout built to a specification you set — for commercial installations, unusual footprints, or a building that has to match something already on site. Priced per project.',
+    specs: [
+      'Built to your dimensions and specification',
+      'Choice of cladding, glazing and interior timber',
+      'Commercial and multi-unit work undertaken',
+      'Drawings issued for approval before build',
+      'Lead times quoted per project'
     ]
-  },
-  {
-    "id": "lumi-indoor-1-2",
-    "name": "Scandinavian Lumi Indoor Sauna",
-    "capacity": "1-2 Person",
-    "category": "indoor-saunas",
-    "badge": "New",
-    "price": 7499,
-    "compareAt": 7999,
-    "rating": 4.5,
-    "reviews": 8,
-    "image": "https://plus.unsplash.com/premium_photo-1746246341943-c54e2d3167bd?q=80&w=900&auto=format&fit=crop",
-    "gallery": [
-      "https://plus.unsplash.com/premium_photo-1746246341943-c54e2d3167bd?q=80&w=1200&auto=format&fit=crop"
-    ],
-    "summary": "Our smallest indoor sauna, sized for a single person or a couple and built to slot into a spare room or basement corner that a full-size cabin never would.",
-    "features": [
-      "Seats 1-2 adults",
-      "Compact footprint for basements and spare rooms",
-      "Electric heater with digital temperature and timer control",
-      "Solid cedar interior, assembled on site",
-      "Lowest price point in the indoor sauna lineup"
-    ]
-  },
-  {
-    "id": "birchwood-indoor-3-4",
-    "name": "Scandinavian Birchwood Indoor Sauna",
-    "capacity": "3-4 Person",
-    "category": "indoor-saunas",
-    "badge": "Sale",
-    "price": 9299,
-    "compareAt": 9999,
-    "rating": 4.5,
-    "reviews": 12,
-    "image": "https://images.unsplash.com/photo-1790756548576-bf0dd2787b2a?q=80&w=900&auto=format&fit=crop",
-    "gallery": [
-      "https://images.unsplash.com/photo-1790756548576-bf0dd2787b2a?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1790756548832-f85ec322b9bd?q=80&w=1200&auto=format&fit=crop"
-    ],
-    "summary": "A family-size indoor sauna finished in birchwood for a brighter, more traditional Scandinavian look than our glass models. Facing benches keep the whole group together.",
-    "features": [
-      "Seats 3-4 adults on facing benches",
-      "Electric heater with digital temperature and timer control",
-      "Bright birchwood interior finish",
-      "Simple bolt-together assembly, no contractor required",
-      "Fits standard 8-ft ceiling heights"
-    ]
-  },
-  {
-    "id": "arctic-plunge-1",
-    "name": "Scandinavian Arctic Cold Plunge",
-    "capacity": "1 Person",
-    "category": "cold-plunges",
-    "badge": "Sale",
-    "price": 6299,
-    "compareAt": 6999,
-    "rating": 5,
-    "reviews": 24,
-    "image": "https://images.unsplash.com/photo-1676776293435-5d521c57944f?q=80&w=900&auto=format&fit=crop",
-    "gallery": [
-      "https://images.unsplash.com/photo-1676776293435-5d521c57944f?q=80&w=1200&auto=format&fit=crop"
-    ],
-    "summary": "A single-person cold plunge built for a daily recovery habit, not an occasional novelty. The integrated chiller holds a consistent temperature year-round, no ice runs required.",
-    "features": [
-      "Integrated water chiller holds 39-50°F automatically",
-      "Seats 1 adult",
-      "Insulated shell holds temperature between sessions",
-      "Includes lid cover and water filtration",
-      "Plug-in operation, no plumbing required"
-    ]
-  },
-  {
-    "id": "arctic-plunge-2",
-    "name": "Scandinavian Arctic Plus Cold Plunge",
-    "capacity": "2 Person",
-    "category": "cold-plunges",
-    "badge": "Sale",
-    "price": 6599,
-    "compareAt": 7499,
-    "rating": 4.5,
-    "reviews": 17,
-    "image": "https://images.unsplash.com/photo-1676776293165-bb72088680b6?q=80&w=900&auto=format&fit=crop",
-    "gallery": [
-      "https://images.unsplash.com/photo-1676776293165-bb72088680b6?q=80&w=1200&auto=format&fit=crop"
-    ],
-    "summary": "The two-person version of our Arctic plunge, wide enough for a partner or training buddy without giving up any of the chiller performance.",
-    "features": [
-      "Integrated water chiller holds 39-50°F automatically",
-      "Seats 2 adults side-by-side",
-      "Insulated shell holds temperature between sessions",
-      "Includes lid cover and water filtration",
-      "Plug-in operation, no plumbing required"
-    ]
-  },
-  {
-    "id": "glacier-cold-tub-2-4",
-    "name": "Scandinavian Glacier Cold Tub",
-    "capacity": "2-4 Person",
-    "category": "cold-plunges",
-    "badge": null,
-    "price": 6999,
-    "compareAt": 7799,
-    "rating": 4.5,
-    "reviews": 10,
-    "image": "https://images.unsplash.com/photo-1654183305001-62d2fdbd18f0?q=80&w=900&auto=format&fit=crop",
-    "gallery": [
-      "https://images.unsplash.com/photo-1654183305001-62d2fdbd18f0?q=80&w=1200&auto=format&fit=crop"
-    ],
-    "summary": "A circular cold tub sized for small groups or a shared backyard setup, paired with an external chiller for ice-free cold therapy whenever you want it.",
-    "features": [
-      "Integrated water chiller holds 39-50°F automatically",
-      "Seats 2-4 adults in a circular layout",
-      "Insulated shell holds temperature between sessions",
-      "Includes lid cover and water filtration",
-      "External chiller sized for the larger water volume"
-    ]
-  },
-  {
-    "id": "insulated-cover",
-    "name": "Insulated Cedar Cover",
-    "capacity": "Universal Fit",
-    "category": "accessories",
-    "badge": null,
-    "price": 395,
-    "compareAt": null,
-    "rating": 5,
-    "reviews": 14,
-    "image": "https://plus.unsplash.com/premium_photo-1733514433379-7db3a5094db4?q=80&w=900&auto=format&fit=crop",
-    "gallery": ["https://plus.unsplash.com/premium_photo-1733514433379-7db3a5094db4?q=80&w=1200&auto=format&fit=crop"],
-    "summary": "A weatherproof cover built to match your tub, keeping heat in and leaves, dust and curious pets out between soaks.",
-    "features": ["Fits all Scandiihaus hot tub models", "Marine-grade vinyl shell resists UV and moisture", "Insulated core slows heat loss between soaks", "Locking straps included for wind resistance"]
-  },
-  {
-    "id": "led-light-kit",
-    "name": "Underwater LED Light Kit",
-    "capacity": "Universal Fit",
-    "category": "accessories",
-    "badge": "New",
-    "price": 225,
-    "compareAt": null,
-    "rating": 4.5,
-    "reviews": 9,
-    "image": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=900&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=1200&auto=format&fit=crop"],
-    "summary": "A retrofit lighting kit that brings the ambient glow of our Eco Lux tubs to any Scandiihaus model, controlled from the deck.",
-    "features": ["7 colour modes plus a slow-fade ambient setting", "Remote control included", "Fits standard underwater mounting points", "Simple retrofit install, no rewiring required"]
-  },
-  {
-    "id": "hot-tub-steps",
-    "name": "Cedar Hot Tub Steps",
-    "capacity": "Universal Fit",
-    "category": "accessories",
-    "badge": null,
-    "price": 165,
-    "compareAt": null,
-    "rating": 4.5,
-    "reviews": 11,
-    "image": "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=900&auto=format&fit=crop",
-    "gallery": ["https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=1200&auto=format&fit=crop"],
-    "summary": "Solid cedar steps built for safe entry and exit, finished to match the tone of your tub rather than looking like a hardware-store add-on.",
-    "features": ["Solid cedar construction", "Non-slip textured tread", "Weatherproof sealant finish matches tub tone", "Rated for everyday use in wet conditions"]
   }
 ];
 
-/* ===== Product data helper ===== */
+/* ---------- Journal posts ---------- */
+const POSTS = [
+  {
+    tag: 'Buying Guide',
+    title: 'Barrel or cabin? How to choose your first sauna',
+    excerpt:
+      'The honest trade-offs between the two shapes — heat-up time, how many people really fit, and what each one asks of your yard.',
+    image: 'images/sauna-cedarhavn-barrel.png'
+  },
+  {
+    tag: 'Wood-Fired Living',
+    title: 'What a wood-fired tub actually asks of you',
+    excerpt:
+      'Filling, lighting, draining and winterising, described properly — so you know what you are signing up for before it arrives.',
+    image: 'images/hot-tub-lake.jpg'
+  },
+  {
+    tag: 'Site Preparation',
+    title: 'Getting the ground right before delivery day',
+    excerpt:
+      'Bases, access widths and drainage. The hour you spend on this is the hour that decides whether install day goes smoothly.',
+    image: 'images/hot-tub-deck-dusk.jpg'
+  }
+];
+
+/* ==========================================================================
+   Helpers
+   ========================================================================== */
+const money = (n) => '$' + n.toLocaleString('en-CA', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const priceLabel = (p) => (p.price === null ? 'Request a quote' : money(p.price));
+
+function starRow(rating) {
+  const full = Math.floor(rating);
+  const half = rating % 1 >= 0.5;
+  return '★'.repeat(full) + (half ? '⯨' : '') + '☆'.repeat(5 - full - (half ? 1 : 0));
+}
+
+function esc(str) {
+  return String(str).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
 function loadProducts() {
   return Promise.resolve(PRODUCTS);
 }
 
-/* ===== Star renderer ===== */
-function starString(rating) {
-  const full = Math.floor(rating);
-  const half = rating % 1 >= 0.5;
-  return '★'.repeat(full) + (half ? '☆' : '') + '☆'.repeat(5 - full - (half ? 1 : 0));
+/* Shared product card markup */
+function cardHTML(p) {
+  return `
+    <article class="card">
+      <a class="card__media" href="product.html?id=${p.id}" aria-label="${esc(p.name)}">
+        ${p.badge ? `<span class="badge badge--${p.badgeTone}">${p.badge}</span>` : ''}
+        <img src="${p.image}" alt="${esc(p.name)} — ${esc(p.variant)}" loading="lazy">
+      </a>
+      ${
+        p.price === null
+          ? `<a class="card__quick" href="contact.html">Enquire</a>`
+          : `<button type="button" class="card__quick" data-add="${p.id}">Add to Cart</button>`
+      }
+      <div class="card__body">
+        <span class="card__cap">${p.capacity}</span>
+        <h3><a href="product.html?id=${p.id}">${esc(p.name)}</a></h3>
+        <div class="card__stars">${starRow(p.rating)}<span>(${p.reviews})</span></div>
+        <div class="card__price">
+          <span class="price-now">${priceLabel(p)}</span>
+          ${p.compareAt ? `<span class="price-was">${money(p.compareAt)}</span>` : ''}
+        </div>
+      </div>
+    </article>`;
 }
 
-/* ===== Mobile nav ===== */
-const hamburgerBtn = document.getElementById('hamburgerBtn');
-const mobileNavOverlay = document.getElementById('mobileNavOverlay');
-const mobileNavClose = document.getElementById('mobileNavClose');
-if (hamburgerBtn) hamburgerBtn.addEventListener('click', () => mobileNavOverlay.classList.add('open'));
-if (mobileNavClose) mobileNavClose.addEventListener('click', () => mobileNavOverlay.classList.remove('open'));
-
-/* ===== Scroll-to-top ===== */
-const scrollTopBtn = document.getElementById('scrollTopBtn');
-if (scrollTopBtn) {
-  window.addEventListener('scroll', () => {
-    scrollTopBtn.classList.toggle('show', window.scrollY > 500);
-  });
-  scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+function renderInto(id, list) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.innerHTML = list.map(cardHTML).join('');
 }
 
-/* ===== Hero slider ===== */
-(function heroSlider() {
-  const slides = document.querySelectorAll('.hero-slide');
-  const dots = document.querySelectorAll('.hero-dots span');
-  if (!slides.length) return;
-  let i = 0;
-  function show(idx) {
-    slides.forEach((s, n) => s.classList.toggle('active', n === idx));
-    dots.forEach((d, n) => d.classList.toggle('active', n === idx));
-    i = idx;
-  }
-  document.querySelector('.hero-arrow.right')?.addEventListener('click', () => show((i + 1) % slides.length));
-  document.querySelector('.hero-arrow.left')?.addEventListener('click', () => show((i - 1 + slides.length) % slides.length));
-  dots.forEach((d, n) => d.addEventListener('click', () => show(n)));
-  show(0);
-  setInterval(() => show((i + 1) % slides.length), 6000);
-})();
-
-/* ===== FAQ accordion ===== */
-document.querySelectorAll('.faq-q').forEach((q) => {
-  q.addEventListener('click', () => {
-    const item = q.closest('.faq-item');
-    const wasOpen = item.classList.contains('open');
-    item.parentElement.querySelectorAll('.faq-item').forEach((el) => el.classList.remove('open'));
-    if (!wasOpen) item.classList.add('open');
-  });
-});
-
-/* ===== Cart (localStorage) ===== */
+/* ==========================================================================
+   Cart (localStorage)
+   ========================================================================== */
 const Cart = {
-  key: 'scandiihaus_cart',
-  get() {
-    try { return JSON.parse(localStorage.getItem(this.key)) || []; } catch (e) { return []; }
+  key: 'scandiihaus_cart_v2',
+  read() {
+    try {
+      return JSON.parse(localStorage.getItem(this.key)) || [];
+    } catch (e) {
+      return [];
+    }
   },
-  save(items) { localStorage.setItem(this.key, JSON.stringify(items)); },
-  add(item) {
-    const items = this.get();
-    const existing = items.find((i) => i.id === item.id);
-    if (existing) existing.qty += item.qty;
-    else items.push(item);
-    this.save(items);
-    this.render();
-    openCart();
+  write(items) {
+    try {
+      localStorage.setItem(this.key, JSON.stringify(items));
+    } catch (e) {
+      /* storage unavailable — cart stays in memory for this page */
+    }
+    this.paint();
+  },
+  add(id, qty = 1) {
+    const product = PRODUCTS.find((p) => p.id === id);
+    if (!product || product.price === null) return;
+    const items = this.read();
+    const hit = items.find((i) => i.id === id);
+    if (hit) hit.qty += qty;
+    else items.push({ id, name: product.name, variant: product.variant, price: product.price, image: product.image, qty });
+    this.write(items);
+    openDrawer();
   },
   remove(id) {
-    this.save(this.get().filter((i) => i.id !== id));
-    this.render();
+    this.write(this.read().filter((i) => i.id !== id));
   },
   total() {
-    return this.get().reduce((sum, i) => sum + i.price * i.qty, 0);
+    return this.read().reduce((sum, i) => sum + i.price * i.qty, 0);
   },
-  render() {
-    const wrap = document.getElementById('cartItems');
-    const dot = document.getElementById('cartDot');
-    const subtotal = document.getElementById('cartSubtotal');
-    if (!wrap) return;
-    const items = this.get();
-    dot.style.display = items.length ? 'flex' : 'none';
-    if (!items.length) {
-      wrap.innerHTML = '<p class="cart-empty">Your bag is empty.</p>';
-    } else {
-      wrap.innerHTML = items.map((i) => `
-        <div class="cart-line">
-          <div class="img-box" style="background-image:url('${i.image}')"></div>
-          <div class="meta">
-            <h5>${i.name}</h5>
-            <p class="cl-price">${i.qty} × $${i.price.toLocaleString()}</p>
-            <span class="remove" data-id="${i.id}">Remove</span>
-          </div>
-        </div>`).join('');
-      wrap.querySelectorAll('.remove').forEach((btn) => btn.addEventListener('click', () => Cart.remove(btn.dataset.id)));
+  count() {
+    return this.read().reduce((sum, i) => sum + i.qty, 0);
+  },
+  paint() {
+    const bubble = document.getElementById('cartCount');
+    if (bubble) {
+      bubble.textContent = this.count();
+      bubble.classList.toggle('is-visible', this.count() > 0);
     }
-    if (subtotal) subtotal.textContent = `$${this.total().toLocaleString()}`;
-  },
+    const body = document.getElementById('drawerBody');
+    const total = document.getElementById('drawerTotal');
+    if (!body) return;
+    const items = this.read();
+    body.innerHTML = items.length
+      ? items
+          .map(
+            (i) => `
+        <div class="line-item">
+          <img src="${i.image}" alt="${esc(i.name)}">
+          <div>
+            <h5>${esc(i.name)}</h5>
+            <p>${i.qty} × ${money(i.price)}</p>
+            <button type="button" data-remove="${i.id}">Remove</button>
+          </div>
+        </div>`
+          )
+          .join('')
+      : '<p class="drawer__empty">Your cart is empty.</p>';
+    if (total) total.textContent = money(this.total());
+  }
 };
 
-const cartBtn = document.getElementById('cartBtn');
-const cartSidebar = document.getElementById('cartSidebar');
-const cartOverlay = document.getElementById('cartOverlay');
-const cartClose = document.getElementById('cartClose');
-function openCart() { cartSidebar?.classList.add('open'); cartOverlay?.classList.add('open'); }
-function closeCart() { cartSidebar?.classList.remove('open'); cartOverlay?.classList.remove('open'); }
-cartBtn?.addEventListener('click', openCart);
-cartClose?.addEventListener('click', closeCart);
-cartOverlay?.addEventListener('click', closeCart);
-document.getElementById('checkoutBtn')?.addEventListener('click', () => alert('This is a demo storefront — checkout is not connected to a payment processor yet.'));
-Cart.render();
+const scrim = document.getElementById('scrim');
+const drawer = document.getElementById('drawer');
+function openDrawer() {
+  drawer?.classList.add('is-open');
+  scrim?.classList.add('is-open');
+}
+function closeDrawer() {
+  drawer?.classList.remove('is-open');
+  scrim?.classList.remove('is-open');
+}
 
-/* ===== Quick add-to-cart buttons (rendered grids) ===== */
-document.addEventListener('click', (e) => {
-  const btn = e.target.closest('[data-add-to-cart]');
-  if (!btn) return;
-  Cart.add({
-    id: btn.dataset.id,
-    name: btn.dataset.name,
-    price: parseFloat(btn.dataset.price),
-    image: btn.dataset.image,
-    qty: 1,
+/* ==========================================================================
+   Boot
+   ========================================================================== */
+document.addEventListener('DOMContentLoaded', () => {
+  Cart.paint();
+
+  /* cart drawer */
+  document.getElementById('cartBtn')?.addEventListener('click', openDrawer);
+  document.getElementById('drawerClose')?.addEventListener('click', closeDrawer);
+  scrim?.addEventListener('click', () => {
+    closeDrawer();
+    document.getElementById('mobileNav')?.classList.remove('is-open');
+  });
+  document.getElementById('checkoutBtn')?.addEventListener('click', () => {
+    window.location.href = 'contact.html';
+  });
+
+  /* add / remove, delegated across every grid on the page */
+  document.addEventListener('click', (e) => {
+    const add = e.target.closest('[data-add]');
+    if (add) {
+      e.preventDefault();
+      Cart.add(add.dataset.add);
+      return;
+    }
+    const rm = e.target.closest('[data-remove]');
+    if (rm) {
+      e.preventDefault();
+      Cart.remove(rm.dataset.remove);
+    }
+  });
+
+  /* mobile nav */
+  const mobileNav = document.getElementById('mobileNav');
+  document.getElementById('burger')?.addEventListener('click', () => {
+    mobileNav?.classList.add('is-open');
+    scrim?.classList.add('is-open');
+  });
+  document.getElementById('mobileClose')?.addEventListener('click', () => {
+    mobileNav?.classList.remove('is-open');
+    scrim?.classList.remove('is-open');
+  });
+
+  /* sticky header shadow */
+  const header = document.querySelector('.header');
+  const onScroll = () => {
+    header?.classList.toggle('is-stuck', window.scrollY > 10);
+    document.getElementById('toTop')?.classList.toggle('is-visible', window.scrollY > 600);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  document.getElementById('toTop')?.addEventListener('click', () =>
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  );
+
+  /* scroll reveal */
+  const reveals = document.querySelectorAll('.reveal');
+  if (reveals.length) {
+    if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      reveals.forEach((el) => el.classList.add('is-in'));
+    } else {
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry, i) => {
+            if (!entry.isIntersecting) return;
+            setTimeout(() => entry.target.classList.add('is-in'), i * 70);
+            io.unobserve(entry.target);
+          });
+        },
+        { threshold: 0.12, rootMargin: '0px 0px -40px' }
+      );
+      reveals.forEach((el) => io.observe(el));
+    }
+  }
+
+  /* accordions (also works for blocks injected later) */
+  document.addEventListener('click', (e) => {
+    const q = e.target.closest('.acc__q');
+    if (!q) return;
+    const item = q.closest('.acc__item');
+    const wasOpen = item.classList.contains('is-open');
+    item.closest('.acc').querySelectorAll('.acc__item').forEach((el) => el.classList.remove('is-open'));
+    if (!wasOpen) item.classList.add('is-open');
+  });
+
+  /* newsletter + enquiry forms */
+  document.querySelectorAll('[data-fake-submit]').forEach((form) => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const note = form.querySelector('[data-note]');
+      if (note) {
+        note.textContent = 'Thanks — we will be in touch shortly.';
+        note.style.color = 'var(--teal-dark)';
+      }
+      form.reset();
+    });
   });
 });
 
+window.PRODUCTS = PRODUCTS;
+window.POSTS = POSTS;
 window.Cart = Cart;
+window.cardHTML = cardHTML;
+window.renderInto = renderInto;
+window.starRow = starRow;
+window.money = money;
+window.priceLabel = priceLabel;
+window.esc = esc;
 window.loadProducts = loadProducts;
-window.starString = starString;
