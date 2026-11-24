@@ -218,32 +218,46 @@ const PRODUCTS = [
 
   /* ---------- Chairs ---------- */
   {
-    id: 'sitta-lounge-chair',
-    name: 'Sitta Lounge Chair',
-    variant: 'Natural Teak',
-    capacity: 'Single Seat',
+    id: 'sitta-chair',
+    name: 'Sitta Chair',
+    variant: 'Ergonomic Recliner',
+    capacity: 'Reclines to 135°',
     category: 'chairs',
     categoryLabel: 'Chairs',
-    badge: 'New',
-    badgeTone: 'teal',
-    price: 449,
-    compareAt: null,
+    badge: 'Black Friday',
+    badgeTone: 'sale',
+    price: 299,
+    compareAt: 399,
     rating: 5,
-    reviews: 12,
+    reviews: 14,
+    colours: ['Birch', 'Slate', 'Ember'],
+    stockNote: 'In stock — ships within 10 business days',
+    trust: ['Free shipping', '3-year frame warranty', '30-day returns'],
     image: 'images/chair-sitta.jpg',
-    gallery: [
-      'images/chair-sitta.jpg',
-      'images/chair-sitta-forest.jpg',
-      'images/chair-sitta-detail.jpg'
-    ],
+    gallery: ['images/chair-sitta.jpg', 'images/chair-sitta-room.jpg'],
     summary:
-      'The chair for the part of the ritual nobody plans for — the twenty minutes between rounds when you are sitting outside cooling off. Solid teak, a canvas sling, and a frame that folds flat when the season turns.',
+      'Most chairs ask you to hold one position all day. The Sitta is built on the opposite idea — it reclines to 135°, the footrest slides out from underneath, and the arms fold away when you want to pull your legs up and sit cross-legged. Working, reading, and the part of the afternoon that is not quite a nap all happen in the same seat.',
     specs: [
-      'Solid teak frame with canvas sling seat',
-      'Folds flat for winter storage',
-      'Untreated teak silvers naturally outdoors',
-      'Low seat height, set for cooling down rather than dining',
-      'Wipe-clean canvas, replaceable sling'
+      'Reclines to 135° with a pull-out footrest',
+      'Fold-away arms for cross-legged sitting',
+      'Teddy plush upholstery — soft, textured, spot-cleanable',
+      'Reinforced steel frame with proper lumbar support',
+      'Holds up to 400 lb; chair weighs 20.5 kg',
+      '125 cm high × 67 cm wide × 72 cm deep, seat 60–70 cm',
+      'SGS-certified Class 3 gas lift, BIFMA-rated casters',
+      'Assembles in 15–20 minutes with the included tool'
+    ],
+    sections: [
+      {
+        title: 'Warranty',
+        body:
+          'Three years on the frame and base, one year on the moving and wearing parts — gas lift, casters, recline mechanism, armrests and upholstery. Both run from the delivery date under normal household use.'
+      },
+      {
+        title: 'Shipping &amp; Returns',
+        body:
+          'Ships free within Canada and the continental United States, typically arriving within 10 business days with tracking. Thirty-day returns in original packaging and resaleable condition; return shipping is paid by the customer. Anything that arrives damaged or faulty is replaced or refunded at no cost to you.'
+      }
     ]
   },
 

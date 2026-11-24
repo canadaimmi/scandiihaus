@@ -214,7 +214,7 @@ document.getElementById('pdp').innerHTML = `
     </div>
     ${p.compareAt ? `<span class="pdp__save">Save ${money(p.compareAt - p.price)}</span>` : ''}
 
-    <div class="pdp__stock"><i></i> ${isQuote ? 'Made to order' : 'In stock — ships in 3–5 weeks'}</div>
+    <div class="pdp__stock"><i></i> ${p.stockNote || (isQuote ? 'Made to order' : 'In stock — ships in 3–5 weeks')}</div>
 
     <p class="pdp__summary">${esc(p.summary)}</p>
 
@@ -223,6 +223,14 @@ document.getElementById('pdp').innerHTML = `
         <h4>Size</h4>
         <select id="variantSelect">
           ${siblings.map(s => `<option value="${s.id}" ${s.id === p.id ? 'selected' : ''}>${esc(s.variant)} — ${priceLabel(s)}</option>`).join('')}
+        </select>
+      </div>` : ''}
+
+    ${p.colours ? `
+      <div class="option">
+        <h4>Colour</h4>
+        <select id="colourSelect">
+          ${p.colours.map(c => `<option value="${esc(c)}">${esc(c)}</option>`).join('')}
         </select>
       </div>` : ''}
 
@@ -244,9 +252,15 @@ document.getElementById('pdp').innerHTML = `
     </div>
 
     <div class="pdp__trust">
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12v9H1zM13 10h5l3 3v3h-8z"/><circle cx="5" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg> Delivered assembled</span>
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 3v7c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V5z"/></svg> 5-year warranty</span>
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg> Financing available</span>
+      ${(p.trust || ['Delivered assembled', '5-year warranty', 'Financing available']).map((label, i) => `
+        <span>
+          ${[
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12v9H1zM13 10h5l3 3v3h-8z"/><circle cx="5" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg>',
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 3v7c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V5z"/></svg>',
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>'
+          ][i] || ''}
+          ${esc(label)}
+        </span>`).join('')}
     </div>
 
     <div class="acc">
@@ -260,22 +274,26 @@ document.getElementById('pdp').innerHTML = `
           <ul class="spec-list">${p.specs.map(s => `<li>${esc(s)}</li>`).join('')}</ul>
         </div></div>
       </div>
-      <div class="acc__item">
-        <button type="button" class="acc__q">Shipping &amp; Delivery <span class="sign">+</span></button>
-        <div class="acc__a"><div class="acc__a-inner">
-          Delivered assembled by freight carrier across Canada and the continental United States, typically
-          3–5 weeks from order. We will call to arrange a delivery window and confirm access before dispatch —
-          please check gate widths and the route to your site in advance.
-        </div></div>
-      </div>
-      <div class="acc__item">
-        <button type="button" class="acc__q">Site Preparation <span class="sign">+</span></button>
-        <div class="acc__a"><div class="acc__a-inner">
-          A level, load-bearing base is all that is required — compacted gravel, paving slabs or an existing deck
-          rated for the weight. No plumbing or electrical hookup is needed for wood-fired models. If you are unsure,
-          our <a href="product.html?id=expert-guidance" style="color:var(--teal-dark);text-decoration:underline;">Expert Guidance Package</a> covers this before you order.
-        </div></div>
-      </div>
+      ${(p.sections || [
+        {
+          title: 'Shipping &amp; Delivery',
+          body:
+            'Delivered assembled by freight carrier across Canada and the continental United States, typically ' +
+            '3–5 weeks from order. We will call to arrange a delivery window and confirm access before dispatch — ' +
+            'please check gate widths and the route to your site in advance.'
+        },
+        {
+          title: 'Site Preparation',
+          body:
+            'A level, load-bearing base is all that is required — compacted gravel, paving slabs or an existing deck ' +
+            'rated for the weight. No plumbing or electrical hookup is needed for wood-fired models. If you are unsure, ' +
+            'our <a href="product.html?id=expert-guidance" style="color:var(--teal-dark);text-decoration:underline;">Expert Guidance Package</a> covers this before you order.'
+        }
+      ]).map(s => `
+        <div class="acc__item">
+          <button type="button" class="acc__q">${s.title} <span class="sign">+</span></button>
+          <div class="acc__a"><div class="acc__a-inner">${s.body}</div></div>
+        </div>`).join('')}
       <div class="acc__item">
         <button type="button" class="acc__q">Reviews (${p.reviews}) <span class="sign">+</span></button>
         <div class="acc__a"><div class="acc__a-inner">
