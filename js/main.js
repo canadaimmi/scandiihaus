@@ -216,6 +216,37 @@ const PRODUCTS = [
     ]
   },
 
+  /* ---------- Chairs ---------- */
+  {
+    id: 'sitta-lounge-chair',
+    name: 'Sitta Lounge Chair',
+    variant: 'Natural Teak',
+    capacity: 'Single Seat',
+    category: 'chairs',
+    categoryLabel: 'Chairs',
+    badge: 'New',
+    badgeTone: 'teal',
+    price: 449,
+    compareAt: null,
+    rating: 5,
+    reviews: 12,
+    image: 'images/chair-sitta.jpg',
+    gallery: [
+      'images/chair-sitta.jpg',
+      'images/chair-sitta-forest.jpg',
+      'images/chair-sitta-detail.jpg'
+    ],
+    summary:
+      'The chair for the part of the ritual nobody plans for — the twenty minutes between rounds when you are sitting outside cooling off. Solid teak, a canvas sling, and a frame that folds flat when the season turns.',
+    specs: [
+      'Solid teak frame with canvas sling seat',
+      'Folds flat for winter storage',
+      'Untreated teak silvers naturally outdoors',
+      'Low seat height, set for cooling down rather than dining',
+      'Wipe-clean canvas, replaceable sling'
+    ]
+  },
+
   /* ---------- Services ---------- */
   {
     id: 'expert-guidance',
